@@ -1,0 +1,13 @@
+#libre {
+
+  padding-bottom: 30px;
+
+  @media screen and (max-width: 940px) {
+    background-color: rgb(222, 184, 135, 0.5);
+  }
+
+  p {
+    text-align: justify;
+    padding: 8px 50px;
+  }
+}

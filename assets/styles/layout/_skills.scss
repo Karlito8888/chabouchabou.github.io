@@ -1,0 +1,76 @@
+#skills {
+  @media screen and (max-width: 940px) {
+    background-color: rgb(222, 184, 135, 0.3);
+  }
+
+  display: block;
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 8px 50px;
+
+    @media screen and (max-width: 520px) {
+      width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 8px 50px 8px 50px;
+       
+      }
+
+    .progress {
+      position: relative;
+      margin-bottom: 0px;
+
+      h4 {
+        margin-bottom: 5px;
+        color: rgba(0, 0, 0, 0.565);
+      }
+
+      .progress-bar {
+        height: 10px;
+        background-color: white;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          background-color: #3a8ce3;
+        }
+      }
+    }
+
+    .progress:nth-child(1) .progress-bar::before {
+      width: 95%;
+    }
+
+    .progress:nth-child(2) .progress-bar::before {
+      width: 80%;
+    }
+
+    .progress:nth-child(3) .progress-bar::before {
+      width: 95%;
+    }
+
+    .progress:nth-child(4) .progress-bar::before {
+      width: 85%;
+    }
+
+    .progress:nth-child(5) .progress-bar::before {
+      width: 75%;
+    }
+
+    .progress:nth-child(6) .progress-bar::before {
+      width: 70%;
+    }
+  }
+
+  
+}
