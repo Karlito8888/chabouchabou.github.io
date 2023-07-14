@@ -1,0 +1,56 @@
+#experiences {
+
+    display: block;
+
+    @media screen and (max-width: 940px) {
+        background-color: rgb(222, 184, 135, 0.3);
+    }
+
+    .experiences-grid {
+
+        padding: 8px 50px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 180px 180px;
+        gap: 20px;
+        grid-template-areas:
+            "da1 po1"
+            "da2 po2";
+
+            @media screen and (max-width: 620px) {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 0.3fr 1fr 0.3fr 1fr;
+                    
+                    grid-template-areas: 
+                    "da1"
+                    "po1"
+                    "da2"
+                    "po2";
+            }
+
+        .date1 {
+            grid-area: da1;
+        }
+
+        .post1 {
+            grid-area: po1;
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .date2 {
+            grid-area: da2;
+        }
+
+        .post2 {
+            grid-area: po2;
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}
