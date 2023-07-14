@@ -1,0 +1,205 @@
+#steps {
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0 0;
+
+    @media screen and (max-width:880px) {
+        display: none;
+    }
+
+    .main-steps {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+
+        .step-1,
+        .step-2,
+        .step-3 {
+            border-radius: 10px;
+            padding: 30px;
+        }
+
+        img {
+            padding: 20px;
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        p {
+            letter-spacing: 1px;
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+#section-carousel {
+    padding: 30px 0;
+    height: 510px;
+    width: 100%;
+
+    @media screen and (min-width:880.1px) {
+        display: none;
+    }
+
+    .carousel {
+        position: relative;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+        height: 450px;
+        width: 100%;
+
+
+        .carousel-inner {
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+
+
+            .carousel-open:checked+.carousel-item {
+                position: static;
+                opacity: 100;
+            }
+
+            .carousel-item {
+                position: absolute;
+                height: 450px;
+                width: 100%;
+                opacity: 0;
+                -webkit-transition: opacity 0.6s ease-out;
+                transition: opacity 0.6s ease-out;
+
+                .step-1,
+                .step-2,
+                .step-3 {
+                    height: 450px;
+                    padding: 50px;
+
+                    img {
+                        display: block;
+                        height: auto;
+                        margin: 0 auto;
+                        padding: 40px;
+
+                        @media screen and (max-width:510px) {
+                            display: none;
+                        }
+                    }
+
+                    p {
+                        width: 60%;
+                        font-size: 1.1rem;
+                        text-align: center;
+                        letter-spacing: 1px;
+                        margin: 0 auto;
+
+                        @media screen and (max-width:510px) {
+                            padding-top: 90px;
+                        }
+
+                        @media screen and (max-width:400px) {
+                            padding-top: 60px;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .carousel-control {
+                background: rgba(0, 0, 0, 0.28);
+                border-radius: 50%;
+                color: #fff;
+                cursor: pointer;
+                display: none;
+                font-size: 40px;
+                height: 40px;
+                line-height: 35px;
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translate(0, -50%);
+                cursor: pointer;
+                -ms-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+                text-align: center;
+                width: 40px;
+                z-index: 10;
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    background: rgba(0, 0, 0, 0.8);
+                    color: #aaaaaa;
+                }
+            }
+
+            .carousel-control.prev {
+                left: 2%;
+            }
+
+            .carousel-control.next {
+                right: 2%;
+            }
+
+            #carousel-1:checked~.control-1,
+            #carousel-2:checked~.control-2,
+            #carousel-3:checked~.control-3 {
+                display: block;
+            }
+
+            .carousel-indicators {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                bottom: 2%;
+                left: 0;
+                right: 0;
+                text-align: center;
+                z-index: 10;
+            }
+
+            .carousel-indicators li {
+                display: inline-block;
+                margin: 0 5px;
+            }
+
+            .carousel-bullet {
+                color: #fff;
+                cursor: pointer;
+                display: block;
+                font-size: 35px;
+            }
+
+            .carousel-bullet:hover {
+                color: #aaaaaa;
+            }
+
+            #carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
+            #carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
+            #carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
+                color: #ff7a00;
+            }
+
+            #title {
+                width: 100%;
+                position: absolute;
+                padding: 0px;
+                margin: 0px auto;
+                text-align: center;
+                font-size: 27px;
+                color: rgba(255, 255, 255, 1);
+                font-family: 'Open Sans', sans-serif;
+                z-index: 9999;
+                text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+            }
+        }
+    }
+}
