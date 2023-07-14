@@ -1,0 +1,25 @@
+footer{
+    width: 90%;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+   
+    > p:first-child{
+        text-align: left;
+    }
+    
+    > p:nth-child(3){
+        text-align: right;
+    }
+
+    @media screen and (max-width: 690px) {
+            display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p{
+                    padding-bottom: 5px;
+                }
+        }
+}

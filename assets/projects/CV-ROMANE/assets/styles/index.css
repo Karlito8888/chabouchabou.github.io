@@ -165,10 +165,11 @@ header::after {
 .up .picture {
   grid-area: pic;
   background-image: url("../img/photogirl.jpg");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  height: 80%;
-  width: 80%;
+  background-repeat: no-repeat;
+  height: 85%;
+  width: 95%;
   margin: auto;
 }
 .up .presentation {

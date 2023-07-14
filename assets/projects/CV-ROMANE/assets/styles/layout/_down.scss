@@ -1,0 +1,121 @@
+.down {
+  position: relative;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    transform: translateY(-50%);
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0px;
+    bottom: -1px;
+    width: 100%;
+    height: 1.5px;
+    background-color: black;
+  }
+
+  @media screen and (max-width: 800px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .down-left {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    line-height: 130%;
+
+    @media screen and (max-width: 800px) {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0px;
+        bottom: -1px;
+        width: 110%;
+        height: 1.5px;
+        background-color: black;
+        transform: translateX(-5%);
+      }
+    }
+
+    .education {
+      display: flex;
+      flex-direction: column;
+
+      .school1,
+      .school2 {
+        padding: 0 0 12px 12px;
+      }
+    }
+
+    .skills {
+      ul {
+        padding: 0 0 12px 27px;
+      }
+    }
+  }
+
+  .down-right {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    .exp1,
+    .exp2,
+    .exp3 {
+      padding-bottom: 20px;
+      line-height: 130%;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+
+      @media screen and (max-width: 520px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr;
+        grid-template-areas:
+          "dat"
+          "com";
+
+        .date {
+          grid-area: dat;
+
+          @media screen and (max-width: 520px) {
+            margin: auto 0;
+          }
+        }
+
+        .company {
+          grid-area: com;
+        }
+      }
+
+      ul {
+        transform: translateX(+20px);
+      }
+    }
+  }
+}
