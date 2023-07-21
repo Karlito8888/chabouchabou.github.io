@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Calistoga", cursive;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 1006px) {
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+.orange {
+  color: #fe6b19;
+}
+
+i {
+  color: #fe6b19;
+  font-size: 1.2rem;
+}
+
+a {
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.accueil {
+  background-color: black;
+  height: 100vh;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 690px;
+  grid-template-rows: 20vh 1fr 3vh;
+  grid-template-areas: "hea asi" "mai asi" "foo foo";
+}
+.accueil header {
+  grid-area: hea;
+  width: calc(100vw - 690px);
+  padding: 20px 0 0 40px;
+  z-index: 20;
+}
+.accueil header img {
+  width: 100%;
+  max-width: 550px;
+  min-width: 480px;
+}
+@media (max-width: 1060px) {
+  .accueil header img {
+    min-width: 400px;
+  }
+}
+.accueil main {
+  grid-area: mai;
+  height: 77vh;
+}
+.accueil main .navigation {
+  height: 77vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.accueil main .navigation nav {
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 50px;
+}
+.accueil main .navigation nav a {
+  display: inline;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.812);
+  font-style: italic;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 10px;
+  z-index: 20;
+}
+.accueil main .navigation nav a:hover {
+  -webkit-transform: scale(1.05) translateX(5px);
+          transform: scale(1.05) translateX(5px);
+  -webkit-box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.812);
+          box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.812);
+  color: white;
+}
+.accueil main .navigation nav a:hover span {
+  color: #fe6b19;
+}
+@media (max-width: 1006px) {
+  .accueil main .navigation nav a:hover {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+.accueil main .navigation nav a h1,
+.accueil main .navigation nav a h2 {
+  display: inline;
+  font-size: 0.8rem;
+}
+.accueil main .navigation nav a span {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.812);
+}
+.accueil aside {
+  grid-area: asi;
+  height: 97vh;
+  width: 690px;
+}
+.accueil aside .video-accueil {
+  width: 100%;
+  height: 97vh;
+  max-width: 690px;
+  position: relative;
+}
+.accueil aside .video-accueil .e-logo {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-45%, -90%);
+          transform: translate(-45%, -90%);
+  opacity: 0.6;
+  z-index: 21;
+}
+.accueil aside .video-accueil .e-logo img {
+  width: 100%;
+  height: auto;
+  -webkit-animation: fadeIn 30s;
+          animation: fadeIn 30s;
+}
+@media (max-width: 1006px) {
+  .accueil aside .video-accueil .e-logo {
+    display: none;
+  }
+}
+.accueil aside .video-accueil video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.accueil footer {
+  grid-area: foo;
+  height: 3vh;
+}
+.accueil footer p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.812);
+  font-weight: lighter;
+  font-size: 0.6rem;
+}
+@media (max-width: 1006px) {
+  .accueil {
+    display: block;
+    position: relative;
+  }
+  .accueil header {
+    display: block;
+    grid-area: initial;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding: 1px 0 0 0;
+    z-index: 10;
+  }
+  .accueil header img {
+    display: block;
+    max-width: 500px;
+    min-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    -webkit-animation: fadeIn 30s;
+            animation: fadeIn 30s;
+  }
+  .accueil main {
+    grid-area: initial;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 10;
+  }
+  .accueil main .navigation {
+    height: 100vh;
+    width: 350px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .accueil main .navigation nav {
+    height: 45%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .accueil main .navigation nav a {
+    margin-bottom: 1%;
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  }
+  .accueil main .navigation nav a span {
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #fe6b19;
+  }
+  .accueil main .navigation nav a img {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .accueil aside {
+    grid-area: initial;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .accueil aside .video-accueil {
+    width: 100%;
+    height: 100%;
+    max-width: 690px;
+    margin: 0 auto;
+  }
+  .accueil footer {
+    grid-area: initial;
+    position: absolute;
+    height: 3vh;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+  }
+  .accueil footer p {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.812);
+    font-size: 0.6rem;
+  }
+}/*# sourceMappingURL=index.css.map */
