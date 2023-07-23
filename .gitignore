@@ -1,2 +1,4 @@
-notes.txt
-*.scss
+/notes.txt
+/assets/styles/layout
+/assets/styles/index.scss
+/assets/styles/index.css.map
