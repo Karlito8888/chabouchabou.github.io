@@ -2,3 +2,5 @@
 /assets/styles/layout
 /assets/styles/index.scss
 /assets/styles/index.css.map
+*.css.map
+*.scss
