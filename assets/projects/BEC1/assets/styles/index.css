@@ -268,56 +268,136 @@ a {
     z-index: 10;
   }
   .accueil main .navigation {
+    display: none;
+  }
+  .accueil main #section-carousel {
+    padding: 30px 0;
     height: 100vh;
-    width: 350px;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .accueil main .navigation nav {
-    height: 45%;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
   }
-  .accueil main .navigation nav a {
-    margin-bottom: 1%;
-    font-size: 0.8rem;
-    color: rgb(255, 255, 255);
-    font-style: italic;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+@media screen and (max-width: 1006px) and (min-width: 1005.9px) {
+  .accueil main #section-carousel {
+    display: none;
   }
-  .accueil main .navigation nav a span {
-    font-family: "Dancing Script", cursive;
-    font-size: 2rem;
-    font-weight: bolder;
+}
+@media (max-width: 1006px) {
+  .accueil main #section-carousel .carousel {
+    position: relative;
+    -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+            box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    height: 40vh;
+    width: 50%;
+    margin: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .accueil main #section-carousel .carousel .carousel-inner {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+  .accueil main #section-carousel .carousel .carousel-inner .carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+  }
+  .accueil main #section-carousel .carousel .carousel-inner .carousel-item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+  }
+  .accueil main #section-carousel .carousel .carousel-inner .carousel-item .step-1,
+  .accueil main #section-carousel .carousel .carousel-inner .carousel-item .step-2,
+  .accueil main #section-carousel .carousel .carousel-inner .carousel-item .step-3,
+  .accueil main #section-carousel .carousel .carousel-inner .carousel-item .step-4,
+  .accueil main #section-carousel .carousel .carousel-inner .carousel-item .step-5 {
+    height: 100%;
+    padding: 50px 40px 50px 50px;
+  }
+  .accueil main #section-carousel .carousel .carousel-inner .carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .accueil main #section-carousel .carousel .carousel-inner .carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+  }
+  .accueil main #section-carousel .carousel .carousel-inner .carousel-control.prev {
+    left: 2%;
+  }
+  .accueil main #section-carousel .carousel .carousel-inner .carousel-control.next {
+    right: 2%;
+  }
+  .accueil main #section-carousel .carousel .carousel-inner #carousel-1:checked ~ .control-1,
+  .accueil main #section-carousel .carousel .carousel-inner #carousel-2:checked ~ .control-2,
+  .accueil main #section-carousel .carousel .carousel-inner #carousel-3:checked ~ .control-3,
+  .accueil main #section-carousel .carousel .carousel-inner #carousel-4:checked ~ .control-4,
+  .accueil main #section-carousel .carousel .carousel-inner #carousel-5:checked ~ .control-5 {
+    display: block;
+  }
+  .accueil main #section-carousel .carousel .carousel-inner .carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+  }
+  .accueil main #section-carousel .carousel .carousel-inner .carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  .accueil main #section-carousel .carousel .carousel-inner .carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+  }
+  .accueil main #section-carousel .carousel .carousel-inner .carousel-bullet:hover {
+    color: #aaaaaa;
+  }
+  .accueil main #section-carousel .carousel .carousel-inner #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+  .accueil main #section-carousel .carousel .carousel-inner #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+  .accueil main #section-carousel .carousel .carousel-inner #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+  .accueil main #section-carousel .carousel .carousel-inner #carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
+  .accueil main #section-carousel .carousel .carousel-inner #carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet {
     color: #fe6b19;
   }
-  .accueil main .navigation nav a img {
-    opacity: 0;
-    visibility: hidden;
+  .accueil main #section-carousel .carousel .carousel-inner #title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
   }
   .accueil aside {
     grid-area: initial;

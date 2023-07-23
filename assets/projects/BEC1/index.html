@@ -14,7 +14,6 @@
     <img src="./assets/img/bec_specialites_de_bieres.png" alt="logo-de-bieres-et-chopes" />
   </header>
   <main>
-
     <div class="navigation">
       <nav>
         <a href="concept.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-right"></i>
@@ -22,12 +21,13 @@
         </a>
 
         <a href="magasins.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-map-pin"></i>
-          <h1><span> v</span>otre <span>B</span>ières &#38; <span>C</span>hopes</h1>
+          <h1>
+            <span> v</span>otre <span>B</span>ières &#38; <span>C</span>hopes
+          </h1>
         </a>
 
         <a href="location.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-beer-mug-empty"></i>
-          <h2><span> l</span>ouez une
-            <span class="orange">t</span>ireuse</h2>
+          <h2><span> l</span>ouez une <span class="orange">t</span>ireuse</h2>
         </a>
 
         <a href="cadeaux.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-gift"></i>
@@ -40,14 +40,102 @@
       </nav>
     </div>
 
+    <section id="section-carousel">
+      <div class="carousel">
+        <div class="carousel-inner">
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+            checked="checked" />
+          <div class="carousel-item">
+            <div class="step-1">
+              <a href="concept.html" target="_blank" rel="noopener noreferrer">
+                <h2>
+                  <span> n</span>otre <span class="orange">c</span>oncept
+                </h2>
+              </a>
+            </div>
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="" />
+          <div class="carousel-item">
+            <div class="step-2">
+              <a href="magasins.html" target="_blank" rel="noopener noreferrer">
+                <h1>
+                  <span> v</span>otre <span>B</span>ières &#38; <span>C</span>hopes
+                </h1>
+              </a>
+            </div>
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="" />
+          <div class="carousel-item">
+            <div class="step-3">
+              <a href="location.html" target="_blank" rel="noopener noreferrer">
+                <h2><span> l</span>ouez une <span class="orange">t</span>ireuse</h2>
+              </a>
+            </div>
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="" />
+          <div class="carousel-item">
+            <div class="step-4">
+              <a href="cadeaux.html" target="_blank" rel="noopener noreferrer">
+                <h2><span> i</span>dées <span class="orange">c</span>adeaux</h2>
+              </a>
+            </div>
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-5" name="carousel" aria-hidden="true" hidden="" />
+          <div class="carousel-item">
+            <div class="step-5">
+              <a href="contact.html" target="_blank" rel="noopener noreferrer">
+                <h2><span> n</span>ous <span class="orange">c</span>ontacter</h2>
+              </a>
+            </div>
+          </div>
+          <label for="carousel-5" class="carousel-control prev control-1">‹</label>
+          <!-- <label for="carousel-4" class="carousel-control next control-1">›</label> -->
+          <!-- <label for="carousel-3" class="carousel-control prev control-1">‹</label> -->
+          <label for="carousel-2" class="carousel-control next control-1">›</label>
+          <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+          <label for="carousel-3" class="carousel-control next control-2">›</label>
+          <!-- <label for="carousel-4" class="carousel-control prev control-2">‹</label> -->
+          <!-- <label for="carousel-5" class="carousel-control next control-2">›</label>
+          <label for="carousel-5" class="carousel-control prev control-3">‹</label> -->
+          <label for="carousel-4" class="carousel-control next control-3">›</label>
+          <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+          <!-- <label for="carousel-1" class="carousel-control next control-3">›</label>
+          <label for="carousel-1" class="carousel-control prev control-4">‹</label>
+          <label for="carousel-2" class="carousel-control next control-4">›</label> -->
+          <label for="carousel-3" class="carousel-control prev control-4">‹</label>
+          <label for="carousel-5" class="carousel-control next control-4">›</label>
+          <label for="carousel-4" class="carousel-control prev control-5">‹</label>
+          <!-- <label for="carousel-3" class="carousel-control next control-5">›</label>
+          <label for="carousel-2" class="carousel-control prev control-5">‹</label> -->
+          <label for="carousel-1" class="carousel-control next control-5">›</label>
+          <ol class="carousel-indicators">
+            <li>
+              <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-4" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-5" class="carousel-bullet">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
   </main>
   <aside>
     <div class="video-accueil">
       <div class="e-logo">
-        <img src="./assets/img/e.png" alt="">
+        <img src="./assets/img/e.png" alt="" />
       </div>
       <video autoplay muted>
-       <source src="./assets/img/beer264.mp4" type="video/mp4" />
+        <source src="./assets/img/beer264.mp4" type="video/mp4" />
         <source src="./assets/img/beer264.webm" type="video/webm" />
         <source src="./assets/img/beer265.mp4" type="video/mp4" />
         <source src="./assets/img/beer264q25.mp4" type="video/mp4" />
