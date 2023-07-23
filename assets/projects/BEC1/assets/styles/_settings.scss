@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Calistoga", cursive;
+}
+
+$color1: #fe6b19;
+$color2: rgba(255, 255, 255, 0.812);
+$color3: white;
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1006px) {
+  @keyframes fadeIn {
+      0% {
+        opacity: 0.6;
+      }
+  
+      50% {
+        opacity: 0.7;
+      }
+  
+      100% {
+        opacity: 1;
+      }
+    }
+
+}
+
+// .orange {
+//   color: $color1;
+// }
+
+i {
+  color: $color1;
+  font-size: 1.2rem;
+}
+
+a {
+  padding: 5px;
+  border-radius: 15px;
+}
