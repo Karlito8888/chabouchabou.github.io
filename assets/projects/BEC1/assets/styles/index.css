@@ -3,9 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Calistoga", cursive;
 }
 
 @-webkit-keyframes fadeIn {
@@ -55,6 +52,13 @@
     }
   }
 }
+.accueil {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Calistoga", cursive;
+  overflow: hidden;
+}
+
 i {
   color: #fe6b19;
   font-size: 1.2rem;
@@ -67,12 +71,12 @@ a {
 
 .accueil {
   background-color: black;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   font-size: 16px;
   display: grid;
   grid-template-columns: 1fr 690px;
-  grid-template-rows: 20vh 1fr 2vh;
+  grid-template-rows: 20vh 80fr 2vh;
   grid-template-areas: "hea asi" "mai asi" "foo foo";
 }
 .accueil header {
@@ -86,6 +90,7 @@ a {
   width: 100%;
   max-width: 550px;
   min-width: 480px;
+  height: auto;
 }
 @media (max-width: 1060px) {
   .accueil header img {
@@ -95,7 +100,7 @@ a {
 .accueil main {
   position: relative;
   grid-area: mai;
-  height: 78vh;
+  height: 80vh;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), color-stop(70%, rgba(0, 0, 0, 0.1)), color-stop(95%, rgb(0, 0, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), color-stop(70%, rgba(0, 0, 0, 0)), color-stop(95%, rgb(0, 0, 0))), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(70%, rgba(0, 0, 0, 0)), color-stop(95%, rgb(0, 0, 0))), url("../img/Shop/chope-bouguenais.jpg");
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 70%, rgb(0, 0, 0) 95%), linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgb(0, 0, 0) 95%), linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgb(0, 0, 0) 95%), url("../img/Shop/chope-bouguenais.jpg");
   background-position: center;
@@ -113,12 +118,12 @@ a {
   position: absolute;
   top: 0;
   right: 0;
-  height: 78vh;
+  height: 80vh;
   width: 4px;
   background-color: black;
 }
 .accueil main .navigation {
-  height: 78vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,17 +203,18 @@ a {
     color: #fe6b19;
   }
 }
-.accueil main #section-carousel {
+.accueil main .section-carousel {
   display: none;
 }
 .accueil aside {
   grid-area: asi;
-  height: 98vh;
-  width: 690px;
+  height: 100vh;
+  width: 100%;
+  max-width: 690px;
 }
 .accueil aside .video-accueil {
   width: 100%;
-  height: 98vh;
+  height: 100%;
   max-width: 690px;
   position: relative;
 }
@@ -264,8 +270,7 @@ a {
   }
   .accueil header img {
     display: block;
-    max-height: 28vh;
-    min-width: 300px;
+    max-width: 300px;
     margin: 0 auto;
     padding: 1px 20px;
     -webkit-animation: fadeIn 5s;
@@ -284,13 +289,13 @@ a {
   .accueil main .navigation {
     display: none;
   }
-  .accueil main #section-carousel {
+  .accueil main .section-carousel {
     display: block;
     padding: 30px 0;
-    height: 78vh;
+    height: 80vh;
     width: 100%;
   }
-  .accueil main #section-carousel .carousel {
+  .accueil main .section-carousel .carousel {
     position: relative;
     height: 42vh;
     width: 50%;
@@ -302,7 +307,7 @@ a {
     -webkit-animation: fadeIn 10s;
             animation: fadeIn 10s;
   }
-  .accueil main #section-carousel .carousel .carousel-inner {
+  .accueil main .section-carousel .carousel .carousel-inner {
     position: relative;
     overflow: hidden;
     height: 100%;
@@ -311,11 +316,11 @@ a {
     -webkit-box-shadow: 0px 0px 9px 2px rgba(255, 255, 255, 0.812);
     box-shadow: 0px 0px 9px 2px rgba(255, 255, 255, 0.812);
   }
-  .accueil main #section-carousel .carousel .carousel-inner .carousel-open:checked + .carousel-item {
+  .accueil main .section-carousel .carousel .carousel-inner .carousel-open:checked + .carousel-item {
     position: static;
     opacity: 100;
   }
-  .accueil main #section-carousel .carousel .carousel-inner .carousel-item {
+  .accueil main .section-carousel .carousel .carousel-inner .carousel-item {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -324,21 +329,21 @@ a {
     transition: opacity 0.6s ease-out;
     border-radius: 20px;
   }
-  .accueil main #section-carousel .carousel .carousel-inner .carousel-item .step-1,
-  .accueil main #section-carousel .carousel .carousel-inner .carousel-item .step-2,
-  .accueil main #section-carousel .carousel .carousel-inner .carousel-item .step-3,
-  .accueil main #section-carousel .carousel .carousel-inner .carousel-item .step-4,
-  .accueil main #section-carousel .carousel .carousel-inner .carousel-item .step-5 {
+  .accueil main .section-carousel .carousel .carousel-inner .carousel-item .step-1,
+  .accueil main .section-carousel .carousel .carousel-inner .carousel-item .step-2,
+  .accueil main .section-carousel .carousel .carousel-inner .carousel-item .step-3,
+  .accueil main .section-carousel .carousel .carousel-inner .carousel-item .step-4,
+  .accueil main .section-carousel .carousel .carousel-inner .carousel-item .step-5 {
     height: 100%;
   }
-  .accueil main #section-carousel .carousel .carousel-inner .carousel-item .step-1 {
+  .accueil main .section-carousel .carousel .carousel-inner .carousel-item .step-1 {
     background-image: url("../img/patrick-jacquin.webp");
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 1;
   }
-  .accueil main #section-carousel .carousel .carousel-inner .carousel-control {
+  .accueil main .section-carousel .carousel .carousel-inner .carousel-control {
     background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
     color: #fff;
@@ -358,24 +363,24 @@ a {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
-  .accueil main #section-carousel .carousel .carousel-inner .carousel-control:hover {
+  .accueil main .section-carousel .carousel .carousel-inner .carousel-control:hover {
     background: rgba(0, 0, 0, 0.8);
     color: #aaaaaa;
   }
-  .accueil main #section-carousel .carousel .carousel-inner .carousel-control.prev {
+  .accueil main .section-carousel .carousel .carousel-inner .carousel-control.prev {
     left: 2%;
   }
-  .accueil main #section-carousel .carousel .carousel-inner .carousel-control.next {
+  .accueil main .section-carousel .carousel .carousel-inner .carousel-control.next {
     right: 2%;
   }
-  .accueil main #section-carousel .carousel .carousel-inner #carousel-1:checked ~ .control-1,
-  .accueil main #section-carousel .carousel .carousel-inner #carousel-2:checked ~ .control-2,
-  .accueil main #section-carousel .carousel .carousel-inner #carousel-3:checked ~ .control-3,
-  .accueil main #section-carousel .carousel .carousel-inner #carousel-4:checked ~ .control-4,
-  .accueil main #section-carousel .carousel .carousel-inner #carousel-5:checked ~ .control-5 {
+  .accueil main .section-carousel .carousel .carousel-inner #carousel-1:checked ~ .control-1,
+  .accueil main .section-carousel .carousel .carousel-inner #carousel-2:checked ~ .control-2,
+  .accueil main .section-carousel .carousel .carousel-inner #carousel-3:checked ~ .control-3,
+  .accueil main .section-carousel .carousel .carousel-inner #carousel-4:checked ~ .control-4,
+  .accueil main .section-carousel .carousel .carousel-inner #carousel-5:checked ~ .control-5 {
     display: block;
   }
-  .accueil main #section-carousel .carousel .carousel-inner .carousel-indicators {
+  .accueil main .section-carousel .carousel .carousel-inner .carousel-indicators {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -386,24 +391,24 @@ a {
     text-align: center;
     z-index: 10;
   }
-  .accueil main #section-carousel .carousel .carousel-inner .carousel-indicators li {
+  .accueil main .section-carousel .carousel .carousel-inner .carousel-indicators li {
     display: inline-block;
     margin: 0 10px;
   }
-  .accueil main #section-carousel .carousel .carousel-inner .carousel-bullet {
+  .accueil main .section-carousel .carousel .carousel-inner .carousel-bullet {
     color: #fff;
     cursor: pointer;
     display: block;
     font-size: 35px;
   }
-  .accueil main #section-carousel .carousel .carousel-inner .carousel-bullet:hover {
+  .accueil main .section-carousel .carousel .carousel-inner .carousel-bullet:hover {
     color: #aaaaaa;
   }
-  .accueil main #section-carousel .carousel .carousel-inner #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-  .accueil main #section-carousel .carousel .carousel-inner #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-  .accueil main #section-carousel .carousel .carousel-inner #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
-  .accueil main #section-carousel .carousel .carousel-inner #carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
-  .accueil main #section-carousel .carousel .carousel-inner #carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet {
+  .accueil main .section-carousel .carousel .carousel-inner #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+  .accueil main .section-carousel .carousel .carousel-inner #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+  .accueil main .section-carousel .carousel .carousel-inner #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+  .accueil main .section-carousel .carousel .carousel-inner #carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
+  .accueil main .section-carousel .carousel .carousel-inner #carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet {
     color: #fe6b19;
   }
   .accueil aside {
@@ -415,12 +420,20 @@ a {
             transform: translateX(-51%);
     opacity: 0.7;
   }
-  .accueil footer {
-    position: absolute;
-    background-color: transparent;
-    top: -4vh;
+  .accueil aside .video-accueil {
     width: 100%;
-    z-index: 20;
+    height: 100%;
+    max-width: 690px;
+  }
+  .accueil aside .video-accueil video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .accueil footer {
+    background-color: transparent;
+    width: 100%;
   }
   .accueil footer p {
     text-align: center;
