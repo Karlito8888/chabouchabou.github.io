@@ -82,20 +82,17 @@ a {
 .accueil header {
   grid-area: hea;
   height: 20vh;
-  width: calc(100vw - 690px);
+  width: 100%;
   padding: 20px 0 0 40px;
   z-index: 20;
 }
-.accueil header img {
+.accueil header .imagebec {
+  height: 20vh;
   width: 100%;
-  max-width: 550px;
-  min-width: 480px;
-  height: auto;
-}
-@media (max-width: 1060px) {
-  .accueil header img {
-    min-width: 400px;
-  }
+  background-image: url("../img/bec_specialites_de_bieres.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .accueil main {
   position: relative;
@@ -264,17 +261,12 @@ a {
     grid-template-areas: "hea" "mai" "asi" "foo";
   }
   .accueil header {
-    display: block;
-    width: 100%;
-    padding: 1px 0 0 0;
+    padding: 0;
   }
-  .accueil header img {
-    display: block;
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 1px 20px;
-    -webkit-animation: fadeIn 5s;
-            animation: fadeIn 5s;
+  .accueil header .imagebec {
+    height: 20vh;
+    width: 80%;
+    margin: auto;
   }
   .accueil main {
     width: 100%;
