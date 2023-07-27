@@ -234,7 +234,7 @@ a {
   color: white;
   background-color: red;
   border-radius: 50%;
-  padding: 3px 4px;
+  padding: 3px;
 }
 .accueil aside {
   grid-area: asi;
@@ -314,7 +314,6 @@ a {
   .accueil main .nav-app {
     height: 60vh;
     width: 270px;
-    margin: 60px auto;
     padding: 1px;
     background-color: initial;
   }
