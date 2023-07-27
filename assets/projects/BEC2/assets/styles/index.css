@@ -185,7 +185,6 @@ a {
 .accueil main .nav-app .nav-app-container .app6 a .img {
   height: 120px;
   width: 120px;
-  background-color: beige;
   border-radius: 15px;
 }
 .accueil main .nav-app .nav-app-container .app1 .img {
@@ -195,7 +194,7 @@ a {
   background-size: cover;
 }
 .accueil main .nav-app .nav-app-container .app2 .img {
-  background: url("../img/maps.png");
+  background: url("../img/map.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -213,16 +212,29 @@ a {
   background-size: cover;
 }
 .accueil main .nav-app .nav-app-container .app5 .img {
-  background: url("../img/phone.svg");
+  background: url("../img/write.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .accueil main .nav-app .nav-app-container .app6 .img {
-  background: url("../img/phone.svg");
+  position: relative;
+  background: url("../img/canvas.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.accueil main .nav-app .nav-app-container .app6 .img::after {
+  content: "1";
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  padding: 3px 4px;
 }
 .accueil aside {
   grid-area: asi;
@@ -283,6 +295,12 @@ a {
     grid-template-columns: 1fr;
     grid-template-areas: "mai" "asi" "foo";
   }
+  .accueil h1,
+  .accueil h2 {
+    color: white;
+    font-size: 0.6rem;
+    margin-top: 4px;
+  }
   .accueil main {
     width: 100%;
     height: 100vh;
@@ -292,6 +310,97 @@ a {
   }
   .accueil main::after {
     display: none;
+  }
+  .accueil main .nav-app {
+    height: 60vh;
+    width: 270px;
+    margin: 60px auto;
+    padding: 1px;
+    background-color: initial;
+  }
+  .accueil main .nav-app .nav-app-container .app1 a,
+  .accueil main .nav-app .nav-app-container .app2 a,
+  .accueil main .nav-app .nav-app-container .app3 a,
+  .accueil main .nav-app .nav-app-container .app4 a,
+  .accueil main .nav-app .nav-app-container .app5 a,
+  .accueil main .nav-app .nav-app-container .app6 a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .accueil main .nav-app .nav-app-container .app1 a:hover,
+  .accueil main .nav-app .nav-app-container .app2 a:hover,
+  .accueil main .nav-app .nav-app-container .app3 a:hover,
+  .accueil main .nav-app .nav-app-container .app4 a:hover,
+  .accueil main .nav-app .nav-app-container .app5 a:hover,
+  .accueil main .nav-app .nav-app-container .app6 a:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .accueil main .nav-app .nav-app-container .app1 a:hover .img,
+  .accueil main .nav-app .nav-app-container .app2 a:hover .img,
+  .accueil main .nav-app .nav-app-container .app3 a:hover .img,
+  .accueil main .nav-app .nav-app-container .app4 a:hover .img,
+  .accueil main .nav-app .nav-app-container .app5 a:hover .img,
+  .accueil main .nav-app .nav-app-container .app6 a:hover .img {
+    -webkit-box-shadow: 1px 1px 10px 2px rgba(51, 51, 51, 0.88);
+            box-shadow: 1px 1px 10px 2px rgba(51, 51, 51, 0.88);
+  }
+  .accueil main .nav-app .nav-app-container .app1 a .img,
+  .accueil main .nav-app .nav-app-container .app2 a .img,
+  .accueil main .nav-app .nav-app-container .app3 a .img,
+  .accueil main .nav-app .nav-app-container .app4 a .img,
+  .accueil main .nav-app .nav-app-container .app5 a .img,
+  .accueil main .nav-app .nav-app-container .app6 a .img {
+    height: 90px;
+    width: 90px;
+    background-color: #fe6b19;
+    border-radius: 15px;
+  }
+  .accueil main .nav-app .nav-app-container .app1 .img {
+    background: url("../img/patrick-jacquin.webp");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .accueil main .nav-app .nav-app-container .app2 .img {
+    background: url("../img/map.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .accueil main .nav-app .nav-app-container .app3 .img {
+    background: url("../img/tireuse.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .accueil main .nav-app .nav-app-container .app4 .img {
+    background: url("../img/coffret.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .accueil main .nav-app .nav-app-container .app5 .img {
+    background: url("../img/write.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .accueil main .nav-app .nav-app-container .app6 .img {
+    background: url("../img/canvas.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .accueil aside {
     position: absolute;
