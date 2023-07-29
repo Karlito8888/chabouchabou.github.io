@@ -58,8 +58,8 @@
             transform: scale(1);
   }
   1% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
   20% {
     -webkit-transform: scale(1);
@@ -72,8 +72,8 @@
             transform: scale(1);
   }
   1% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
   20% {
     -webkit-transform: scale(1);
@@ -90,8 +90,8 @@
             transform: scale(1);
   }
   71% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
   90% {
     -webkit-transform: scale(1);
@@ -108,8 +108,8 @@
             transform: scale(1);
   }
   71% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
   90% {
     -webkit-transform: scale(1);
@@ -126,8 +126,8 @@
             transform: scale(1);
   }
   61% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
   75% {
     -webkit-transform: scale(1);
@@ -144,8 +144,8 @@
             transform: scale(1);
   }
   61% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
   75% {
     -webkit-transform: scale(1);
@@ -234,8 +234,8 @@
             transform: scale(1);
   }
   51% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
   65% {
     -webkit-transform: scale(1);
@@ -252,8 +252,8 @@
             transform: scale(1);
   }
   51% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
   65% {
     -webkit-transform: scale(1);
@@ -292,7 +292,7 @@ a {
 .accueil h1,
 .accueil h2 {
   color: white;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   margin-top: 3px;
 }
 .accueil main {
@@ -510,11 +510,6 @@ a {
   -webkit-animation: fadeIn 30s;
           animation: fadeIn 30s;
 }
-@media (max-width: 1050px) {
-  .accueil aside .video-accueil .e-logo {
-    display: none;
-  }
-}
 .accueil aside .video-accueil video {
   width: 100%;
   height: 100%;
@@ -542,7 +537,7 @@ a {
   .accueil h1,
   .accueil h2 {
     color: white;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     margin-top: 4px;
   }
   .accueil main {
@@ -705,6 +700,12 @@ a {
   }
 }
 @media screen and (min-width: 760px) and (max-width: 920px) and (orientation: portrait) {
+  .accueil h1,
+  .accueil h2 {
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 4px;
+  }
   .accueil main {
     width: 100%;
     height: 100vh;
@@ -741,32 +742,14 @@ a {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
-  .accueil main .nav-app .nav-app-container .app1 a:hover,
-  .accueil main .nav-app .nav-app-container .app2 a:hover,
-  .accueil main .nav-app .nav-app-container .app3 a:hover,
-  .accueil main .nav-app .nav-app-container .app4 a:hover,
-  .accueil main .nav-app .nav-app-container .app5 a:hover,
-  .accueil main .nav-app .nav-app-container .app6 a:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  .accueil main .nav-app .nav-app-container .app1 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app2 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app3 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app4 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app5 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app6 a:hover .img {
-    -webkit-box-shadow: 1px 1px 10px 2px rgba(51, 51, 51, 0.88);
-            box-shadow: 1px 1px 10px 2px rgba(51, 51, 51, 0.88);
-  }
   .accueil main .nav-app .nav-app-container .app1 a .img,
   .accueil main .nav-app .nav-app-container .app2 a .img,
   .accueil main .nav-app .nav-app-container .app3 a .img,
   .accueil main .nav-app .nav-app-container .app4 a .img,
   .accueil main .nav-app .nav-app-container .app5 a .img,
   .accueil main .nav-app .nav-app-container .app6 a .img {
-    height: 120px;
-    width: 120px;
+    height: 130px;
+    width: 130px;
     background-color: transparent;
     border-radius: 15px;
   }
@@ -820,6 +803,9 @@ a {
     height: 100%;
     max-width: 690px;
   }
+  .accueil aside .video-accueil .e-logo {
+    display: none;
+  }
   .accueil aside .video-accueil video {
     width: 100%;
     height: 100%;
@@ -846,8 +832,9 @@ a {
   .accueil h1,
   .accueil h2 {
     color: white;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     margin-top: 4px;
+    z-index: 40;
   }
   .accueil main {
     width: 100%;
@@ -885,24 +872,6 @@ a {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
-  .accueil main .nav-app .nav-app-container .app1 a:hover,
-  .accueil main .nav-app .nav-app-container .app2 a:hover,
-  .accueil main .nav-app .nav-app-container .app3 a:hover,
-  .accueil main .nav-app .nav-app-container .app4 a:hover,
-  .accueil main .nav-app .nav-app-container .app5 a:hover,
-  .accueil main .nav-app .nav-app-container .app6 a:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  .accueil main .nav-app .nav-app-container .app1 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app2 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app3 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app4 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app5 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app6 a:hover .img {
-    -webkit-box-shadow: 1px 1px 10px 2px rgba(51, 51, 51, 0.88);
-            box-shadow: 1px 1px 10px 2px rgba(51, 51, 51, 0.88);
-  }
   .accueil main .nav-app .nav-app-container .app1 a .img,
   .accueil main .nav-app .nav-app-container .app2 a .img,
   .accueil main .nav-app .nav-app-container .app3 a .img,
@@ -964,6 +933,9 @@ a {
     height: 100%;
     max-width: 690px;
   }
+  .accueil aside .video-accueil .e-logo {
+    display: none;
+  }
   .accueil aside .video-accueil video {
     width: 100%;
     height: 100%;
@@ -980,8 +952,12 @@ a {
     font-size: 0.5rem;
   }
 }
-@media screen and (max-width: 450px) {
-  .accueil h1,
+@media screen and (max-width: 500px) {
+  .accueil h1 {
+    color: white;
+    font-size: 0.6rem;
+    margin-top: 4px;
+  }
   .accueil h2 {
     color: white;
     font-size: 0.5rem;
@@ -1024,30 +1000,118 @@ a {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
-  .accueil main .nav-app .nav-app-container .app1 a:hover,
-  .accueil main .nav-app .nav-app-container .app2 a:hover,
-  .accueil main .nav-app .nav-app-container .app3 a:hover,
-  .accueil main .nav-app .nav-app-container .app4 a:hover,
-  .accueil main .nav-app .nav-app-container .app5 a:hover,
-  .accueil main .nav-app .nav-app-container .app6 a:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  .accueil main .nav-app .nav-app-container .app1 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app2 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app3 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app4 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app5 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app6 a:hover .img {
-    -webkit-box-shadow: 1px 1px 10px 2px rgba(51, 51, 51, 0.88);
-            box-shadow: 1px 1px 10px 2px rgba(51, 51, 51, 0.88);
-  }
   .accueil main .nav-app .nav-app-container .app1 a .img,
   .accueil main .nav-app .nav-app-container .app2 a .img,
   .accueil main .nav-app .nav-app-container .app3 a .img,
   .accueil main .nav-app .nav-app-container .app4 a .img,
   .accueil main .nav-app .nav-app-container .app5 a .img,
   .accueil main .nav-app .nav-app-container .app6 a .img {
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    border-radius: 15px;
+  }
+}
+@media screen and (max-width: 950px) and (orientation: landscape) {
+  .accueil main .nav-app {
+    height: 100vh;
+    width: 100%;
+    padding: 1px;
+  }
+  .accueil main .nav-app .nav-app-container {
+    height: 95%;
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .accueil main .nav-app .nav-app-container .app1 {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .accueil main .nav-app .nav-app-container .app2 {
+    grid-row: 1;
+    grid-column: 4;
+  }
+  .accueil main .nav-app .nav-app-container .app3 {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .accueil main .nav-app .nav-app-container .app4 {
+    grid-row: 2;
+    grid-column: 3;
+  }
+  .accueil main .nav-app .nav-app-container .app5 {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .accueil main .nav-app .nav-app-container .app6 {
+    grid-row: 3;
+    grid-column: 4;
+  }
+  .accueil main .nav-app .nav-app-container .app1,
+  .accueil main .nav-app .nav-app-container .app2,
+  .accueil main .nav-app .nav-app-container .app3,
+  .accueil main .nav-app .nav-app-container .app4,
+  .accueil main .nav-app .nav-app-container .app5,
+  .accueil main .nav-app .nav-app-container .app6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .accueil main .nav-app .nav-app-container .app1 a,
+  .accueil main .nav-app .nav-app-container .app2 a,
+  .accueil main .nav-app .nav-app-container .app3 a,
+  .accueil main .nav-app .nav-app-container .app4 a,
+  .accueil main .nav-app .nav-app-container .app5 a,
+  .accueil main .nav-app .nav-app-container .app6 a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .accueil main .nav-app .nav-app-container .app1 a .transition-container,
+  .accueil main .nav-app .nav-app-container .app2 a .transition-container,
+  .accueil main .nav-app .nav-app-container .app3 a .transition-container,
+  .accueil main .nav-app .nav-app-container .app4 a .transition-container,
+  .accueil main .nav-app .nav-app-container .app5 a .transition-container,
+  .accueil main .nav-app .nav-app-container .app6 a .transition-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .accueil main .nav-app .nav-app-container .app1 a .transition-container .img,
+  .accueil main .nav-app .nav-app-container .app2 a .transition-container .img,
+  .accueil main .nav-app .nav-app-container .app3 a .transition-container .img,
+  .accueil main .nav-app .nav-app-container .app4 a .transition-container .img,
+  .accueil main .nav-app .nav-app-container .app5 a .transition-container .img,
+  .accueil main .nav-app .nav-app-container .app6 a .transition-container .img {
+    display: block;
     height: 100px;
     width: 100px;
     background-color: transparent;
