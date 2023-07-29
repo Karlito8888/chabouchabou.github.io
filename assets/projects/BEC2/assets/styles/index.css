@@ -52,6 +52,214 @@
     }
   }
 }
+@-webkit-keyframes scaleAnimation1 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  1% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scaleAnimation1 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  1% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes scaleAnimation2 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  71% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scaleAnimation2 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  71% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes scaleAnimation3 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  61% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scaleAnimation3 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  61% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes scaleAnimation4 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  11% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scaleAnimation4 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  11% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes scaleAnimation5 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  21% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  35% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scaleAnimation5 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  21% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  35% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes scaleAnimation6 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  51% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  65% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scaleAnimation6 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  51% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  65% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 .accueil {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -230,6 +438,12 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.accueil main .nav-app .nav-app-container .app2 h1 {
+  letter-spacing: 2px;
+}
+.accueil main .nav-app .nav-app-container .app2 h1 span {
+  color: #fe6b19;
+}
 .accueil main .nav-app .nav-app-container .app3 .img {
   background: url("../img/tireuse.jpg");
   background-position: center;
@@ -389,24 +603,6 @@ a {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
-  .accueil main .nav-app .nav-app-container .app1 a:hover,
-  .accueil main .nav-app .nav-app-container .app2 a:hover,
-  .accueil main .nav-app .nav-app-container .app3 a:hover,
-  .accueil main .nav-app .nav-app-container .app4 a:hover,
-  .accueil main .nav-app .nav-app-container .app5 a:hover,
-  .accueil main .nav-app .nav-app-container .app6 a:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  .accueil main .nav-app .nav-app-container .app1 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app2 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app3 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app4 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app5 a:hover .img,
-  .accueil main .nav-app .nav-app-container .app6 a:hover .img {
-    -webkit-box-shadow: 0;
-            box-shadow: 0;
-  }
   .accueil main .nav-app .nav-app-container .app1 a .img,
   .accueil main .nav-app .nav-app-container .app2 a .img,
   .accueil main .nav-app .nav-app-container .app3 a .img,
@@ -418,37 +614,61 @@ a {
     background-color: transparent;
     border-radius: 15px;
   }
-  .accueil main .nav-app .nav-app-container .app1 .img {
+  .accueil main .nav-app .nav-app-container .app1 .transition-container {
+    -webkit-animation: scaleAnimation1 5s infinite;
+            animation: scaleAnimation1 5s infinite;
+  }
+  .accueil main .nav-app .nav-app-container .app1 .transition-container .img {
     background: url("../img/patrick-jacquin.webp");
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .accueil main .nav-app .nav-app-container .app2 .img {
+  .accueil main .nav-app .nav-app-container .app2 .transition-container {
+    -webkit-animation: scaleAnimation2 5s infinite;
+            animation: scaleAnimation2 5s infinite;
+  }
+  .accueil main .nav-app .nav-app-container .app2 .transition-container .img {
     background: url("../img/map.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .accueil main .nav-app .nav-app-container .app3 .img {
+  .accueil main .nav-app .nav-app-container .app3 .transition-container {
+    -webkit-animation: scaleAnimation3 5s infinite;
+            animation: scaleAnimation3 5s infinite;
+  }
+  .accueil main .nav-app .nav-app-container .app3 .transition-container .img {
     background: url("../img/tireuse.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .accueil main .nav-app .nav-app-container .app4 .img {
+  .accueil main .nav-app .nav-app-container .app4 .transition-container {
+    -webkit-animation: scaleAnimation4 5s infinite;
+            animation: scaleAnimation4 5s infinite;
+  }
+  .accueil main .nav-app .nav-app-container .app4 .transition-container .img {
     background: url("../img/coffret.jpg");
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .accueil main .nav-app .nav-app-container .app5 .img {
+  .accueil main .nav-app .nav-app-container .app5 .transition-container {
+    -webkit-animation: scaleAnimation5 5s infinite;
+            animation: scaleAnimation5 5s infinite;
+  }
+  .accueil main .nav-app .nav-app-container .app5 .transition-container .img {
     background: url("../img/write.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .accueil main .nav-app .nav-app-container .app6 .img {
+  .accueil main .nav-app .nav-app-container .app6 .transition-container {
+    -webkit-animation: scaleAnimation6 5s infinite;
+            animation: scaleAnimation6 5s infinite;
+  }
+  .accueil main .nav-app .nav-app-container .app6 .transition-container .img {
     background: url("../img/canvas.png");
     background-position: center;
     background-repeat: no-repeat;
