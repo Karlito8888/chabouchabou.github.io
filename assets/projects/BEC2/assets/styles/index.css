@@ -537,6 +537,7 @@ a {
     display: block;
   }
   .accueil main {
+    position: relative;
     height: 100%;
     width: 100%;
     background-image: none;
@@ -762,13 +763,14 @@ a {
 @media screen and (max-width: 500px) {
   .accueil h1,
   .accueil h2 {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
   }
   .accueil main .nav-app {
     height: 70vh;
   }
   .accueil main .nav-app .nav-app-container {
     height: 100%;
+    max-width: 280px;
   }
   .accueil main .nav-app .nav-app-container .app1 a .img,
   .accueil main .nav-app .nav-app-container .app2 a .img,
