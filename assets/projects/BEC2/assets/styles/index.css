@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
 * {
@@ -281,20 +280,19 @@ a {
 
 .accueil {
   background-color: black;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   font-size: 16px;
   letter-spacing: 1px;
   display: grid;
   grid-template-columns: 1fr 690px;
-  grid-template-rows: 100vh 2vh;
   grid-template-areas: "mai asi" "foo foo";
 }
 .accueil h1,
 .accueil h2 {
   color: white;
   font-size: 0.8rem;
-  margin-top: 3px;
+  margin-top: 5px;
 }
 .accueil main {
   position: relative;
@@ -325,18 +323,22 @@ a {
   background-size: contain;
 }
 .accueil main .nav-app {
-  height: 500px;
+  height: 520px;
   width: 320px;
   margin: 50px auto;
-  padding: 10px 0 0 0;
   background-color: rgba(128, 128, 128, 0.271);
   border-radius: 30px;
   z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .accueil main .nav-app .nav-app-container {
-  height: 100%;
-  width: 95%;
-  margin: auto;
+  height: 90%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -348,7 +350,6 @@ a {
 .accueil main .nav-app .nav-app-container .app6 {
   height: 100%;
   width: 100%;
-  border-radius: 10px;
 }
 .accueil main .nav-app .nav-app-container .app1 a,
 .accueil main .nav-app .nav-app-container .app2 a,
@@ -373,8 +374,8 @@ a {
 .accueil main .nav-app .nav-app-container .app4 a .transition-container,
 .accueil main .nav-app .nav-app-container .app5 a .transition-container,
 .accueil main .nav-app .nav-app-container .app6 a .transition-container {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .accueil main .nav-app .nav-app-container .app1 a .transition-container:hover,
 .accueil main .nav-app .nav-app-container .app2 a .transition-container:hover,
@@ -393,10 +394,10 @@ a {
 .accueil main .nav-app .nav-app-container .app6 a .transition-container:hover .img {
   -webkit-box-shadow: 1px 1px 10px 2px rgba(51, 51, 51, 0.88);
           box-shadow: 1px 1px 10px 2px rgba(51, 51, 51, 0.88);
-  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
-  transition: -webkit-box-shadow 0.3s ease-in-out;
-  transition: box-shadow 0.3s ease-in-out;
-  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 .accueil main .nav-app .nav-app-container .app1 a .transition-container:hover h1,
 .accueil main .nav-app .nav-app-container .app1 a .transition-container:hover h2,
@@ -410,12 +411,12 @@ a {
 .accueil main .nav-app .nav-app-container .app5 a .transition-container:hover h2,
 .accueil main .nav-app .nav-app-container .app6 a .transition-container:hover h1,
 .accueil main .nav-app .nav-app-container .app6 a .transition-container:hover h2 {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 .accueil main .nav-app .nav-app-container .app1 a .img,
 .accueil main .nav-app .nav-app-container .app2 a .img,
@@ -482,20 +483,21 @@ a {
   border-radius: 50%;
   padding: 3px;
 }
-.accueil main .nav-carousel {
-  display: none;
-}
 .accueil aside {
   grid-area: asi;
   height: 100vh;
   width: 100%;
-  max-width: 690px;
 }
 .accueil aside .video-accueil {
   width: 100%;
   height: 100%;
-  max-width: 690px;
   position: relative;
+}
+.accueil aside .video-accueil video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .accueil aside .video-accueil .e-logo {
   position: absolute;
@@ -506,7 +508,7 @@ a {
   -webkit-transform: translate(-45%, -90%);
           transform: translate(-45%, -90%);
   opacity: 0.6;
-  z-index: 21;
+  z-index: 20;
 }
 .accueil aside .video-accueil .e-logo img {
   width: 100%;
@@ -514,16 +516,15 @@ a {
   -webkit-animation: fadeIn 30s;
           animation: fadeIn 30s;
 }
-.accueil aside .video-accueil video {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 .accueil footer {
-  background-color: black;
+  position: absolute;
+  background-color: transparent;
   grid-area: foo;
   height: 2vh;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .accueil footer p {
   text-align: center;
@@ -533,43 +534,75 @@ a {
 }
 @media screen and (max-width: 1020px) {
   .accueil {
-    height: 100vh;
-    width: 100%;
-    position: relative;
     display: block;
   }
-  .accueil h1,
-  .accueil h2 {
-    color: white;
-    font-size: 0.8rem;
-    margin-top: 4px;
-  }
   .accueil main {
-    position: relative;
+    height: 100%;
     width: 100%;
-    height: 100vh;
     background-image: none;
-    background-color: transparent;
     z-index: 20;
   }
   .accueil main::after {
     display: none;
   }
   .accueil main .nav-app {
-    position: absolute;
-    height: 90%;
+    height: 80vh;
     width: 90%;
-    margin: 0;
-    padding: 1px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    margin: 0 auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     background-color: initial;
   }
   .accueil main .nav-app .nav-app-container {
     -ms-flex-line-pack: space-evenly;
         align-content: space-evenly;
+  }
+  .accueil main .nav-app .nav-app-container .app1 a .transition-container,
+  .accueil main .nav-app .nav-app-container .app2 a .transition-container,
+  .accueil main .nav-app .nav-app-container .app3 a .transition-container,
+  .accueil main .nav-app .nav-app-container .app4 a .transition-container,
+  .accueil main .nav-app .nav-app-container .app5 a .transition-container,
+  .accueil main .nav-app .nav-app-container .app6 a .transition-container {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .accueil main .nav-app .nav-app-container .app1 a .transition-container:hover,
+  .accueil main .nav-app .nav-app-container .app2 a .transition-container:hover,
+  .accueil main .nav-app .nav-app-container .app3 a .transition-container:hover,
+  .accueil main .nav-app .nav-app-container .app4 a .transition-container:hover,
+  .accueil main .nav-app .nav-app-container .app5 a .transition-container:hover,
+  .accueil main .nav-app .nav-app-container .app6 a .transition-container:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .accueil main .nav-app .nav-app-container .app1 a .transition-container:hover .img,
+  .accueil main .nav-app .nav-app-container .app2 a .transition-container:hover .img,
+  .accueil main .nav-app .nav-app-container .app3 a .transition-container:hover .img,
+  .accueil main .nav-app .nav-app-container .app4 a .transition-container:hover .img,
+  .accueil main .nav-app .nav-app-container .app5 a .transition-container:hover .img,
+  .accueil main .nav-app .nav-app-container .app6 a .transition-container:hover .img {
+    -webkit-transition: none;
+    transition: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .accueil main .nav-app .nav-app-container .app1 a .transition-container:hover h1,
+  .accueil main .nav-app .nav-app-container .app1 a .transition-container:hover h2,
+  .accueil main .nav-app .nav-app-container .app2 a .transition-container:hover h1,
+  .accueil main .nav-app .nav-app-container .app2 a .transition-container:hover h2,
+  .accueil main .nav-app .nav-app-container .app3 a .transition-container:hover h1,
+  .accueil main .nav-app .nav-app-container .app3 a .transition-container:hover h2,
+  .accueil main .nav-app .nav-app-container .app4 a .transition-container:hover h1,
+  .accueil main .nav-app .nav-app-container .app4 a .transition-container:hover h2,
+  .accueil main .nav-app .nav-app-container .app5 a .transition-container:hover h1,
+  .accueil main .nav-app .nav-app-container .app5 a .transition-container:hover h2,
+  .accueil main .nav-app .nav-app-container .app6 a .transition-container:hover h1,
+  .accueil main .nav-app .nav-app-container .app6 a .transition-container:hover h2 {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
   }
   .accueil main .nav-app .nav-app-container .app1 a,
   .accueil main .nav-app .nav-app-container .app3 a,
@@ -583,215 +616,68 @@ a {
     float: right;
     margin-right: 5%;
   }
-  .accueil main .nav-app .nav-app-container .app1 a,
-  .accueil main .nav-app .nav-app-container .app2 a,
-  .accueil main .nav-app .nav-app-container .app3 a,
-  .accueil main .nav-app .nav-app-container .app4 a,
-  .accueil main .nav-app .nav-app-container .app5 a,
-  .accueil main .nav-app .nav-app-container .app6 a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  .accueil main .nav-app .nav-app-container .app1 a .img,
-  .accueil main .nav-app .nav-app-container .app2 a .img,
-  .accueil main .nav-app .nav-app-container .app3 a .img,
-  .accueil main .nav-app .nav-app-container .app4 a .img,
-  .accueil main .nav-app .nav-app-container .app5 a .img,
-  .accueil main .nav-app .nav-app-container .app6 a .img {
-    height: 120px;
-    width: 120px;
-    background-color: transparent;
-    border-radius: 15px;
-  }
   .accueil main .nav-app .nav-app-container .app1 .transition-container {
     -webkit-animation: scaleAnimation1 5s infinite;
             animation: scaleAnimation1 5s infinite;
-  }
-  .accueil main .nav-app .nav-app-container .app1 .transition-container .img {
-    background: url("../img/patrick-jacquin.webp");
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .accueil main .nav-app .nav-app-container .app2 .transition-container {
     -webkit-animation: scaleAnimation2 5s infinite;
             animation: scaleAnimation2 5s infinite;
   }
-  .accueil main .nav-app .nav-app-container .app2 .transition-container .img {
-    background: url("../img/map.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   .accueil main .nav-app .nav-app-container .app3 .transition-container {
     -webkit-animation: scaleAnimation3 5s infinite;
             animation: scaleAnimation3 5s infinite;
-  }
-  .accueil main .nav-app .nav-app-container .app3 .transition-container .img {
-    background: url("../img/tireuse.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .accueil main .nav-app .nav-app-container .app4 .transition-container {
     -webkit-animation: scaleAnimation4 5s infinite;
             animation: scaleAnimation4 5s infinite;
   }
-  .accueil main .nav-app .nav-app-container .app4 .transition-container .img {
-    background: url("../img/coffret.jpg");
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   .accueil main .nav-app .nav-app-container .app5 .transition-container {
     -webkit-animation: scaleAnimation5 5s infinite;
             animation: scaleAnimation5 5s infinite;
-  }
-  .accueil main .nav-app .nav-app-container .app5 .transition-container .img {
-    background: url("../img/write.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .accueil main .nav-app .nav-app-container .app6 .transition-container {
     -webkit-animation: scaleAnimation6 5s infinite;
             animation: scaleAnimation6 5s infinite;
   }
-  .accueil main .nav-app .nav-app-container .app6 .transition-container .img {
-    background: url("../img/canvas.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   .accueil aside {
     position: absolute;
-    height: 100vh;
     top: 0;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    opacity: 0.9;
-  }
-  .accueil aside .video-accueil {
-    width: 100%;
-    height: 100%;
-    max-width: 690px;
-  }
-  .accueil aside .video-accueil video {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .accueil footer {
-    background-color: transparent;
-    width: 100%;
+    -webkit-transform: translateX(-51%);
+            transform: translateX(-51%);
   }
   .accueil footer p {
-    text-align: center;
-    color: rgba(255, 255, 255, 0.812);
     font-size: 0.5rem;
   }
 }
-@media screen and (min-width: 760px) and (max-width: 920px) and (orientation: portrait) {
-  .accueil h1,
-  .accueil h2 {
-    color: white;
-    font-size: 0.8rem;
-    margin-top: 4px;
-  }
-  .accueil main {
-    width: 100%;
-    height: 100vh;
-    background-image: none;
-    background-color: transparent;
-    z-index: 20;
-  }
-  .accueil main::after {
-    display: none;
-  }
+@media only screen and (760px <= width <= 920px) and (orientation: portrait) {
   .accueil main .nav-app {
     height: 60vh;
-    width: 370px;
-    margin-top: 35px;
-    padding: 1px;
-    background-color: initial;
+    width: 50%;
+    margin-top: 30px;
   }
-  .accueil main .nav-app .nav-app-container .app1 a,
-  .accueil main .nav-app .nav-app-container .app2 a,
-  .accueil main .nav-app .nav-app-container .app3 a,
-  .accueil main .nav-app .nav-app-container .app4 a,
-  .accueil main .nav-app .nav-app-container .app5 a,
-  .accueil main .nav-app .nav-app-container .app6 a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+  .accueil main .nav-app .nav-app-container {
+    height: 100%;
+    width: 100%;
   }
-  .accueil main .nav-app .nav-app-container .app1 a .img,
-  .accueil main .nav-app .nav-app-container .app2 a .img,
-  .accueil main .nav-app .nav-app-container .app3 a .img,
-  .accueil main .nav-app .nav-app-container .app4 a .img,
-  .accueil main .nav-app .nav-app-container .app5 a .img,
-  .accueil main .nav-app .nav-app-container .app6 a .img {
-    height: 130px;
-    width: 130px;
-    background-color: transparent;
-    border-radius: 15px;
+  .accueil main .nav-app .nav-app-container .app1,
+  .accueil main .nav-app .nav-app-container .app2,
+  .accueil main .nav-app .nav-app-container .app3,
+  .accueil main .nav-app .nav-app-container .app4,
+  .accueil main .nav-app .nav-app-container .app5,
+  .accueil main .nav-app .nav-app-container .app6 {
+    height: 100%;
+    width: 100%;
   }
-  .accueil main .nav-app .nav-app-container .app1 .img {
-    background: url("../img/patrick-jacquin.webp");
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .accueil main .nav-app .nav-app-container .app2 .img {
-    background: url("../img/map.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .accueil main .nav-app .nav-app-container .app3 .img {
-    background: url("../img/tireuse.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .accueil main .nav-app .nav-app-container .app4 .img {
-    background: url("../img/coffret.jpg");
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .accueil main .nav-app .nav-app-container .app5 .img {
-    background: url("../img/write.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .accueil main .nav-app .nav-app-container .app6 .img {
-    background: url("../img/canvas.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .accueil main .nav-app .nav-app-container .app1 a .transition-container .img,
+  .accueil main .nav-app .nav-app-container .app2 a .transition-container .img,
+  .accueil main .nav-app .nav-app-container .app3 a .transition-container .img,
+  .accueil main .nav-app .nav-app-container .app4 a .transition-container .img,
+  .accueil main .nav-app .nav-app-container .app5 a .transition-container .img,
+  .accueil main .nav-app .nav-app-container .app6 a .transition-container .img {
+    height: 150px;
+    width: 150px;
   }
   .accueil aside {
     position: absolute;
@@ -805,7 +691,6 @@ a {
   .accueil aside .video-accueil {
     width: 100%;
     height: 100%;
-    max-width: 690px;
   }
   .accueil aside .video-accueil .e-logo {
     display: none;
@@ -826,55 +711,16 @@ a {
     font-size: 0.5rem;
   }
 }
-@media screen and (max-width: 819px) {
-  .accueil {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    display: block;
-  }
+@media screen and (max-width: 750px) {
   .accueil h1,
   .accueil h2 {
-    color: white;
     font-size: 0.7rem;
-    margin-top: 4px;
-    z-index: 40;
-  }
-  .accueil main {
-    width: 100%;
-    height: 100vh;
-    background-image: none;
-    background-color: transparent;
-    z-index: 20;
-  }
-  .accueil main::after {
-    display: none;
   }
   .accueil main .nav-app {
-    height: 60vh;
-    width: 50%;
-    min-width: 300px;
-    padding: 1px;
-    background-color: initial;
-  }
-  .accueil main .nav-app .nav-app-container .app1 a,
-  .accueil main .nav-app .nav-app-container .app2 a,
-  .accueil main .nav-app .nav-app-container .app3 a,
-  .accueil main .nav-app .nav-app-container .app4 a,
-  .accueil main .nav-app .nav-app-container .app5 a,
-  .accueil main .nav-app .nav-app-container .app6 a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    height: 70vh;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 30px;
   }
   .accueil main .nav-app .nav-app-container .app1 a .img,
   .accueil main .nav-app .nav-app-container .app2 a .img,
@@ -884,50 +730,8 @@ a {
   .accueil main .nav-app .nav-app-container .app6 a .img {
     height: 120px;
     width: 120px;
-    background-color: transparent;
-    border-radius: 15px;
-  }
-  .accueil main .nav-app .nav-app-container .app1 .img {
-    background: url("../img/patrick-jacquin.webp");
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .accueil main .nav-app .nav-app-container .app2 .img {
-    background: url("../img/map.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .accueil main .nav-app .nav-app-container .app3 .img {
-    background: url("../img/tireuse.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .accueil main .nav-app .nav-app-container .app4 .img {
-    background: url("../img/coffret.jpg");
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .accueil main .nav-app .nav-app-container .app5 .img {
-    background: url("../img/write.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .accueil main .nav-app .nav-app-container .app6 .img {
-    background: url("../img/canvas.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .accueil aside {
-    position: absolute;
-    height: 100vh;
-    top: 0;
-    left: 50%;
     -webkit-transform: translateX(-52%);
             transform: translateX(-52%);
     opacity: 0.9;
@@ -935,7 +739,6 @@ a {
   .accueil aside .video-accueil {
     width: 100%;
     height: 100%;
-    max-width: 690px;
   }
   .accueil aside .video-accueil .e-logo {
     display: none;
@@ -957,52 +760,15 @@ a {
   }
 }
 @media screen and (max-width: 500px) {
-  .accueil h1 {
-    color: white;
-    font-size: 0.6rem;
-    margin-top: 4px;
-  }
+  .accueil h1,
   .accueil h2 {
-    color: white;
-    font-size: 0.5rem;
-    margin-top: 4px;
-  }
-  .accueil main {
-    width: 100%;
-    height: 100vh;
-    background-image: none;
-    background-color: transparent;
-    z-index: 20;
-  }
-  .accueil main::after {
-    display: none;
+    font-size: 0.7rem;
   }
   .accueil main .nav-app {
     height: 60vh;
-    width: 50%;
-    min-width: 290px;
-    margin: 35px auto;
-    padding: 1px;
-    background-color: initial;
   }
-  .accueil main .nav-app .nav-app-container .app1 a,
-  .accueil main .nav-app .nav-app-container .app2 a,
-  .accueil main .nav-app .nav-app-container .app3 a,
-  .accueil main .nav-app .nav-app-container .app4 a,
-  .accueil main .nav-app .nav-app-container .app5 a,
-  .accueil main .nav-app .nav-app-container .app6 a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+  .accueil main .nav-app .nav-app-container {
+    height: 100%;
   }
   .accueil main .nav-app .nav-app-container .app1 a .img,
   .accueil main .nav-app .nav-app-container .app2 a .img,
@@ -1010,112 +776,12 @@ a {
   .accueil main .nav-app .nav-app-container .app4 a .img,
   .accueil main .nav-app .nav-app-container .app5 a .img,
   .accueil main .nav-app .nav-app-container .app6 a .img {
-    height: 100px;
-    width: 100px;
-    background-color: transparent;
-    border-radius: 15px;
+    height: 110px;
+    width: 110px;
   }
 }
 @media screen and (max-width: 950px) and (orientation: landscape) {
-  .accueil main .nav-app {
-    display: none;
-  }
-  .accueil main .nav-carousel {
-    display: block;
-    padding: 20px;
-    -webkit-perspective: 500px;
-            perspective: 500px;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .accueil main .nav-carousel > * {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-  }
-  .accueil main .nav-carousel figure {
-    margin: 0;
-    width: 150px;
-    height: 150px;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
-    -webkit-transform-origin: 50% 50% -482.8427124746px;
-            transform-origin: 50% 50% -482.8427124746px;
-  }
-  .accueil main .nav-carousel figure .img {
-    width: 150px;
-    height: 150px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    border-radius: 15px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    /* L'image sera redimensionnée pour couvrir tout le conteneur tout en préservant son ratio */
-    /* L'image sera centrée à l'intérieur du conteneur */
-    opacity: 1;
-  }
-  .accueil main .nav-carousel figure .img:not(:first-of-type) {
-    position: absolute;
-    left: 0;
-    top: 0;
-    -webkit-transform-origin: 50% 50% -482.8427124746px;
-            transform-origin: 50% 50% -482.8427124746px;
-  }
-  .accueil main .nav-carousel figure .img:nth-child(2) {
-    -webkit-transform: rotateY(1.0471975512rad);
-            transform: rotateY(1.0471975512rad);
-  }
-  .accueil main .nav-carousel figure .img:nth-child(3) {
-    -webkit-transform: rotateY(2.0943951024rad);
-            transform: rotateY(2.0943951024rad);
-  }
-  .accueil main .nav-carousel figure .img:nth-child(4) {
-    -webkit-transform: rotateY(3.1415926536rad);
-            transform: rotateY(3.1415926536rad);
-  }
-  .accueil main .nav-carousel figure .img:nth-child(5) {
-    -webkit-transform: rotateY(4.1887902048rad);
-            transform: rotateY(4.1887902048rad);
-  }
-  .accueil main .nav-carousel figure .img:nth-child(6) {
-    -webkit-transform: rotateY(5.235987756rad);
-            transform: rotateY(5.235987756rad);
-  }
-  .accueil main .nav-carousel nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 20px 0 0;
-  }
-  .accueil main .nav-carousel nav button {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    margin: 0 5px;
-    cursor: pointer;
-    color: #fe6b19;
-    background: none;
-    border: 1px solid;
-    letter-spacing: 1px;
-    padding: 5px 10px;
-  }
-  .accueil aside {
+  .accueil main aside {
     position: absolute;
     top: 0;
     left: 50%;
