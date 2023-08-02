@@ -286,6 +286,7 @@ a {
   letter-spacing: 1px;
   display: grid;
   grid-template-columns: 1fr 690px;
+  grid-template-rows: 100vh 2vh;
   grid-template-areas: "mai asi" "foo foo";
 }
 .accueil h1,
@@ -517,14 +518,8 @@ a {
           animation: fadeIn 30s;
 }
 .accueil footer {
-  position: absolute;
   background-color: transparent;
   grid-area: foo;
-  height: 2vh;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 .accueil footer p {
   text-align: center;
@@ -702,13 +697,7 @@ a {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .accueil footer {
-    background-color: transparent;
-    width: 100%;
-  }
   .accueil footer p {
-    text-align: center;
-    color: rgba(255, 255, 255, 0.812);
     font-size: 0.5rem;
   }
 }
@@ -754,11 +743,6 @@ a {
     background-color: transparent;
     width: 100%;
   }
-  .accueil footer p {
-    text-align: center;
-    color: rgba(255, 255, 255, 0.812);
-    font-size: 0.5rem;
-  }
 }
 @media screen and (max-width: 500px) {
   .accueil h1,
@@ -767,10 +751,12 @@ a {
   }
   .accueil main .nav-app {
     height: 70vh;
+    margin-top: 30px;
   }
   .accueil main .nav-app .nav-app-container {
     height: 100%;
     max-width: 280px;
+    margin: 0 auto;
   }
   .accueil main .nav-app .nav-app-container .app1 a .img,
   .accueil main .nav-app .nav-app-container .app2 a .img,
@@ -782,8 +768,52 @@ a {
     width: 110px;
   }
 }
-@media screen and (max-width: 950px) and (orientation: landscape) {
-  .accueil main aside {
+@media only screen and (max-width: 500px) and (orientation: landscape) {
+  .accueil main {
+    position: relative;
+  }
+  .accueil main .nav-app {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .accueil main .nav-app .nav-app-container {
+    height: 90%;
+    width: 95%;
+  }
+  .accueil main .nav-app .nav-app-container .app1,
+  .accueil main .nav-app .nav-app-container .app2,
+  .accueil main .nav-app .nav-app-container .app3,
+  .accueil main .nav-app .nav-app-container .app4,
+  .accueil main .nav-app .nav-app-container .app5,
+  .accueil main .nav-app .nav-app-container .app6 {
+    height: 30%;
+    background-color: aquamarine;
+  }
+  .accueil main .nav-app .nav-app-container .app1 a .img,
+  .accueil main .nav-app .nav-app-container .app2 a .img,
+  .accueil main .nav-app .nav-app-container .app3 a .img,
+  .accueil main .nav-app .nav-app-container .app4 a .img,
+  .accueil main .nav-app .nav-app-container .app5 a .img,
+  .accueil main .nav-app .nav-app-container .app6 a .img {
+    height: 70px;
+    width: 70px;
+  }
+  .accueil aside {
     position: absolute;
     top: 0;
     left: 50%;
