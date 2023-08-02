@@ -527,7 +527,7 @@ a {
   font-weight: lighter;
   font-size: 0.6rem;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1020px) {
   .accueil {
     display: block;
   }
@@ -647,7 +647,7 @@ a {
     font-size: 0.5rem;
   }
 }
-@media only screen and (max-width: 1000px) and (orientation: landscape) {
+@media only screen and (max-width: 920px) and (orientation: landscape) {
   .accueil h1,
   .accueil h2 {
     font-size: 0.9rem;
@@ -822,7 +822,7 @@ a {
     font-size: 0.5rem;
   }
 }
-@media screen and (max-width: 750px) and (orientation: portrait) {
+@media only screen and (max-width: 750px) and (orientation: portrait) {
   .accueil h1,
   .accueil h2 {
     font-size: 0.7rem;
@@ -865,7 +865,7 @@ a {
     width: 100%;
   }
 }
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@media only screen and (max-width: 500px) and (orientation: portrait) {
   .accueil h1,
   .accueil h2 {
     font-size: 0.65rem;
