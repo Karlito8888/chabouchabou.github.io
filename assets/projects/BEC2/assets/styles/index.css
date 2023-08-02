@@ -744,31 +744,7 @@ a {
     width: 100%;
   }
 }
-@media screen and (max-width: 500px) {
-  .accueil h1,
-  .accueil h2 {
-    font-size: 0.65rem;
-  }
-  .accueil main .nav-app {
-    height: 70vh;
-    margin-top: 30px;
-  }
-  .accueil main .nav-app .nav-app-container {
-    height: 100%;
-    max-width: 280px;
-    margin: 0 auto;
-  }
-  .accueil main .nav-app .nav-app-container .app1 a .img,
-  .accueil main .nav-app .nav-app-container .app2 a .img,
-  .accueil main .nav-app .nav-app-container .app3 a .img,
-  .accueil main .nav-app .nav-app-container .app4 a .img,
-  .accueil main .nav-app .nav-app-container .app5 a .img,
-  .accueil main .nav-app .nav-app-container .app6 a .img {
-    height: 110px;
-    width: 110px;
-  }
-}
-@media only screen and (max-width: 500px) and (orientation: landscape) {
+@media only screen and (max-width: 750px) and (orientation: landscape) {
   .accueil main {
     position: relative;
   }
@@ -819,5 +795,34 @@ a {
     left: 50%;
     -webkit-transform: translateX(-51%);
             transform: translateX(-51%);
+  }
+}
+@media screen and (max-width: 500px) {
+  .accueil h1,
+  .accueil h2 {
+    font-size: 0.65rem;
+  }
+  .accueil main .nav-app {
+    height: 70vh;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .accueil main .nav-app .nav-app-container {
+    height: 100%;
+    max-width: 280px;
+  }
+  .accueil main .nav-app .nav-app-container .app1 a .img,
+  .accueil main .nav-app .nav-app-container .app2 a .img,
+  .accueil main .nav-app .nav-app-container .app3 a .img,
+  .accueil main .nav-app .nav-app-container .app4 a .img,
+  .accueil main .nav-app .nav-app-container .app5 a .img,
+  .accueil main .nav-app .nav-app-container .app6 a .img {
+    height: 110px;
+    width: 110px;
   }
 }/*# sourceMappingURL=index.css.map */
