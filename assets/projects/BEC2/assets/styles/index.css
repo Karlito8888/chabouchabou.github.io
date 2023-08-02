@@ -647,7 +647,60 @@ a {
     font-size: 0.5rem;
   }
 }
-@media only screen and (760px <= width <= 920px) and (orientation: portrait) {
+@media only screen and (max-width: 950px) and (orientation: landscape) {
+  .accueil main {
+    position: relative;
+  }
+  .accueil main .nav-app {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .accueil main .nav-app .nav-app-container {
+    height: 90%;
+    width: 95%;
+  }
+  .accueil main .nav-app .nav-app-container .app1,
+  .accueil main .nav-app .nav-app-container .app2,
+  .accueil main .nav-app .nav-app-container .app3,
+  .accueil main .nav-app .nav-app-container .app4,
+  .accueil main .nav-app .nav-app-container .app5,
+  .accueil main .nav-app .nav-app-container .app6 {
+    height: 30%;
+    background-color: aquamarine;
+  }
+  .accueil main .nav-app .nav-app-container .app1 a .img,
+  .accueil main .nav-app .nav-app-container .app2 a .img,
+  .accueil main .nav-app .nav-app-container .app3 a .img,
+  .accueil main .nav-app .nav-app-container .app4 a .img,
+  .accueil main .nav-app .nav-app-container .app5 a .img,
+  .accueil main .nav-app .nav-app-container .app6 a .img {
+    height: 70px;
+    width: 70px;
+  }
+  .accueil aside {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-51%);
+            transform: translateX(-51%);
+  }
+}
+@media only screen and (750px <= width <= 950px) and (orientation: portrait) {
   .accueil main .nav-app {
     height: 60vh;
     width: 50%;
@@ -742,59 +795,6 @@ a {
   .accueil footer {
     background-color: transparent;
     width: 100%;
-  }
-}
-@media only screen and (max-width: 750px) and (orientation: landscape) {
-  .accueil main {
-    position: relative;
-  }
-  .accueil main .nav-app {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    margin-top: 0;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .accueil main .nav-app .nav-app-container {
-    height: 90%;
-    width: 95%;
-  }
-  .accueil main .nav-app .nav-app-container .app1,
-  .accueil main .nav-app .nav-app-container .app2,
-  .accueil main .nav-app .nav-app-container .app3,
-  .accueil main .nav-app .nav-app-container .app4,
-  .accueil main .nav-app .nav-app-container .app5,
-  .accueil main .nav-app .nav-app-container .app6 {
-    height: 30%;
-    background-color: aquamarine;
-  }
-  .accueil main .nav-app .nav-app-container .app1 a .img,
-  .accueil main .nav-app .nav-app-container .app2 a .img,
-  .accueil main .nav-app .nav-app-container .app3 a .img,
-  .accueil main .nav-app .nav-app-container .app4 a .img,
-  .accueil main .nav-app .nav-app-container .app5 a .img,
-  .accueil main .nav-app .nav-app-container .app6 a .img {
-    height: 70px;
-    width: 70px;
-  }
-  .accueil aside {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-51%);
-            transform: translateX(-51%);
   }
 }
 @media screen and (max-width: 500px) {
