@@ -276,228 +276,243 @@ a {
   text-align: center;
 }
 
-#accueil {
-  background-color: black;
-  height: 100vh;
-  width: 100%;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: grid;
-  grid-template-columns: 1fr 690px;
-  grid-template-areas: "mai asi";
-}
-#accueil h1,
-#accueil h2 {
-  color: white;
-  font-size: 0.8rem;
-  margin-top: 5px;
-}
-#accueil .main-accueil {
-  position: relative;
-  grid-area: mai;
-  height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(146, 146, 146, 0)), color-stop(70%, rgba(0, 0, 0, 0.66)), to(rgb(0, 0, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), color-stop(70%, rgba(255, 255, 255, 0)), color-stop(85%, rgba(255, 255, 255, 0.775))), url("../img/Shop/chope-bouguenais.jpg");
-  background-image: linear-gradient(to right, rgba(146, 146, 146, 0) 0%, rgba(0, 0, 0, 0.66) 70%, rgb(0, 0, 0) 100%), linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.775) 85%), url("../img/Shop/chope-bouguenais.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: local;
-}
-#accueil .main-accueil::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 4px;
-  background-color: black;
-}
-#accueil .main-accueil .imagebec {
-  height: 20vh;
-  width: 90%;
-  margin: 10px auto;
-  background-image: url("../img/bec_specialites_de_bieres.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-#accueil .main-accueil .imagesbec {
-  display: none;
-}
-#accueil .main-accueil .nav-app {
-  aspect-ratio: 3/2;
-  height: 65vh;
-  max-height: 520px;
-  width: 100%;
-  max-width: 325px;
-  margin: 50px auto;
-  background-color: rgba(128, 128, 128, 0.271);
-  border-radius: 30px;
-  z-index: 20;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-#accueil .main-accueil .nav-app .nav-app-container {
-  height: 90%;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-}
-#accueil .main-accueil .nav-app .nav-app-container .app1,
-#accueil .main-accueil .nav-app .nav-app-container .app2,
-#accueil .main-accueil .nav-app .nav-app-container .app3,
-#accueil .main-accueil .nav-app .nav-app-container .app4,
-#accueil .main-accueil .nav-app .nav-app-container .app5,
-#accueil .main-accueil .nav-app .nav-app-container .app6 {
-  height: 33%;
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-#accueil .main-accueil .nav-app .nav-app-container .app1 a,
-#accueil .main-accueil .nav-app .nav-app-container .app2 a,
-#accueil .main-accueil .nav-app .nav-app-container .app3 a,
-#accueil .main-accueil .nav-app .nav-app-container .app4 a,
-#accueil .main-accueil .nav-app .nav-app-container .app5 a,
-#accueil .main-accueil .nav-app .nav-app-container .app6 a {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-#accueil .main-accueil .nav-app .nav-app-container .app1 a:hover,
-#accueil .main-accueil .nav-app .nav-app-container .app2 a:hover,
-#accueil .main-accueil .nav-app .nav-app-container .app3 a:hover,
-#accueil .main-accueil .nav-app .nav-app-container .app4 a:hover,
-#accueil .main-accueil .nav-app .nav-app-container .app5 a:hover,
-#accueil .main-accueil .nav-app .nav-app-container .app6 a:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-#accueil .main-accueil .nav-app .nav-app-container .app1 a:hover .img,
-#accueil .main-accueil .nav-app .nav-app-container .app2 a:hover .img,
-#accueil .main-accueil .nav-app .nav-app-container .app3 a:hover .img,
-#accueil .main-accueil .nav-app .nav-app-container .app4 a:hover .img,
-#accueil .main-accueil .nav-app .nav-app-container .app5 a:hover .img,
-#accueil .main-accueil .nav-app .nav-app-container .app6 a:hover .img {
-  -webkit-box-shadow: 1px 1px 10px 2px rgba(51, 51, 51, 0.88);
-          box-shadow: 1px 1px 10px 2px rgba(51, 51, 51, 0.88);
-  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
-  transition: -webkit-box-shadow 0.2s ease-in-out;
-  transition: box-shadow 0.2s ease-in-out;
-  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
-}
-#accueil .main-accueil .nav-app .nav-app-container .app1 a:hover h1,
-#accueil .main-accueil .nav-app .nav-app-container .app1 a:hover h2,
-#accueil .main-accueil .nav-app .nav-app-container .app2 a:hover h1,
-#accueil .main-accueil .nav-app .nav-app-container .app2 a:hover h2,
-#accueil .main-accueil .nav-app .nav-app-container .app3 a:hover h1,
-#accueil .main-accueil .nav-app .nav-app-container .app3 a:hover h2,
-#accueil .main-accueil .nav-app .nav-app-container .app4 a:hover h1,
-#accueil .main-accueil .nav-app .nav-app-container .app4 a:hover h2,
-#accueil .main-accueil .nav-app .nav-app-container .app5 a:hover h1,
-#accueil .main-accueil .nav-app .nav-app-container .app5 a:hover h2,
-#accueil .main-accueil .nav-app .nav-app-container .app6 a:hover h1,
-#accueil .main-accueil .nav-app .nav-app-container .app6 a:hover h2 {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  transition: -webkit-transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-  text-align: center;
-}
-#accueil .main-accueil .nav-app .nav-app-container .app1 a .img,
-#accueil .main-accueil .nav-app .nav-app-container .app2 a .img,
-#accueil .main-accueil .nav-app .nav-app-container .app3 a .img,
-#accueil .main-accueil .nav-app .nav-app-container .app4 a .img,
-#accueil .main-accueil .nav-app .nav-app-container .app5 a .img,
-#accueil .main-accueil .nav-app .nav-app-container .app6 a .img {
-  aspect-ratio: 1/1;
-  height: 100%;
-  max-height: 120px;
-  width: 100%;
-  max-width: 120px;
-  border-radius: 15px;
-  margin: 0 auto;
-}
-#accueil .main-accueil .nav-app .nav-app-container .app1 .img {
-  background: url("../img/patrick-jacquin.webp");
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#accueil .main-accueil .nav-app .nav-app-container .app2 .img {
-  background: url("../img/map.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#accueil .main-accueil .nav-app .nav-app-container .app2 h1 {
-  letter-spacing: 2px;
-}
-#accueil .main-accueil .nav-app .nav-app-container .app2 h1 span {
-  color: #fe6b19;
-}
-#accueil .main-accueil .nav-app .nav-app-container .app3 .img {
-  background: url("../img/tireuse.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#accueil .main-accueil .nav-app .nav-app-container .app4 .img {
-  background: url("../img/coffret.jpg");
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#accueil .main-accueil .nav-app .nav-app-container .app5 .img {
-  background: url("../img/write.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#accueil .main-accueil .nav-app .nav-app-container .app6 .img {
-  position: relative;
-  background: url("../img/canvas.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#accueil .main-accueil .nav-app .nav-app-container .app6 .img::after {
-  content: "1";
-  position: absolute;
-  top: 0;
-  right: 0;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
-  color: white;
-  background-color: red;
-  border-radius: 50%;
-  padding: 3px;
+@media screen and (max-width: 1550px) {
+  #accueil {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: grid;
+    grid-template-columns: 1fr 690px;
+    grid-template-areas: "mai asi";
+  }
+  #accueil h1,
+  #accueil h2 {
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+  #accueil .main-accueil {
+    position: relative;
+    grid-area: mai;
+    height: 100vh;
+    width: calc(100vw - 690px);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(146, 146, 146, 0)), color-stop(70%, rgba(0, 0, 0, 0.66)), to(rgb(0, 0, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), color-stop(70%, rgba(255, 255, 255, 0)), color-stop(85%, rgba(255, 255, 255, 0.775))), url("../img/Shop/chope-bouguenais.jpg");
+    background-image: linear-gradient(to right, rgba(146, 146, 146, 0) 0%, rgba(0, 0, 0, 0.66) 70%, rgb(0, 0, 0) 100%), linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.775) 85%), url("../img/Shop/chope-bouguenais.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: local;
+  }
+  #accueil .main-accueil::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 3px;
+    background-color: black;
+  }
+  #accueil .main-accueil .imagebec {
+    height: 20vh;
+    width: 90%;
+    margin: 10px auto;
+    background-image: url("../img/bec_specialites_de_bieres.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #accueil .main-accueil .imagesbec {
+    display: none;
+  }
+  #accueil .main-accueil .navigation {
+    height: 80vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #accueil .main-accueil .navigation .nav-app {
+    height: 80%;
+    width: 60%;
+    min-width: 300px;
+    max-width: 380px;
+    margin: 0 auto;
+    background-color: rgba(128, 128, 128, 0.271);
+    border-radius: 30px;
+    z-index: 20;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container {
+    height: 90%;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 {
+    height: 33%;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a:hover,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a:hover,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a:hover,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a:hover,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a:hover,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a:hover .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a:hover .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a:hover .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a:hover .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a:hover .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a:hover .img {
+    -webkit-box-shadow: 1px 1px 10px 2px rgba(51, 51, 51, 0.88);
+            box-shadow: 1px 1px 10px 2px rgba(51, 51, 51, 0.88);
+    -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+    transition: -webkit-box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a:hover h2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a:hover h2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a:hover h2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a:hover h2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a:hover h2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a:hover h2 {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    text-align: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a .img {
+    aspect-ratio: 1/1;
+    height: 100%;
+    max-height: 120px;
+    width: 100%;
+    max-width: 120px;
+    border-radius: 15px;
+    margin: 0 auto;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 .img {
+    background: url("../img/patrick-jacquin.webp");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 .img {
+    background: url("../img/map.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 h1 {
+    letter-spacing: 2px;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 h1 span {
+    color: #fe6b19;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 .img {
+    background: url("../img/tireuse.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 .img {
+    background: url("../img/coffret.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 .img {
+    background: url("../img/write.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 .img {
+    position: relative;
+    background: url("../img/canvas.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 .img::after {
+    content: "1";
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    padding: 3px;
+  }
 }
 #accueil .aside-accueil {
   grid-area: asi;
@@ -548,15 +563,14 @@ a {
   #accueil .main-accueil .imagebec {
     margin: 0 auto;
   }
-  #accueil .main-accueil .nav-app {
-    aspect-ratio: auto;
+  #accueil .main-accueil .navigation .nav-app {
     display: block;
     height: 80vh;
     min-width: 100%;
     margin: 35px auto;
     background-color: initial;
   }
-  #accueil .main-accueil .nav-app .nav-app-container {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container {
     height: 100%;
     width: 95%;
     margin: 0 auto;
@@ -566,88 +580,88 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app1 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app2 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app3 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app4 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app5 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app6 a {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a {
     width: 200px;
     -webkit-transition: none;
     transition: none;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app1 a:hover,
-  #accueil .main-accueil .nav-app .nav-app-container .app2 a:hover,
-  #accueil .main-accueil .nav-app .nav-app-container .app3 a:hover,
-  #accueil .main-accueil .nav-app .nav-app-container .app4 a:hover,
-  #accueil .main-accueil .nav-app .nav-app-container .app5 a:hover,
-  #accueil .main-accueil .nav-app .nav-app-container .app6 a:hover {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a:hover,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a:hover,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a:hover,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a:hover,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a:hover,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a:hover {
     -webkit-transform: none;
             transform: none;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app1 a:hover .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app2 a:hover .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app3 a:hover .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app4 a:hover .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app5 a:hover .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app6 a:hover .img {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a:hover .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a:hover .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a:hover .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a:hover .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a:hover .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a:hover .img {
     -webkit-transition: none;
     transition: none;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app1 a:hover h1,
-  #accueil .main-accueil .nav-app .nav-app-container .app1 a:hover h2,
-  #accueil .main-accueil .nav-app .nav-app-container .app2 a:hover h1,
-  #accueil .main-accueil .nav-app .nav-app-container .app2 a:hover h2,
-  #accueil .main-accueil .nav-app .nav-app-container .app3 a:hover h1,
-  #accueil .main-accueil .nav-app .nav-app-container .app3 a:hover h2,
-  #accueil .main-accueil .nav-app .nav-app-container .app4 a:hover h1,
-  #accueil .main-accueil .nav-app .nav-app-container .app4 a:hover h2,
-  #accueil .main-accueil .nav-app .nav-app-container .app5 a:hover h1,
-  #accueil .main-accueil .nav-app .nav-app-container .app5 a:hover h2,
-  #accueil .main-accueil .nav-app .nav-app-container .app6 a:hover h1,
-  #accueil .main-accueil .nav-app .nav-app-container .app6 a:hover h2 {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a:hover h2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a:hover h2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a:hover h2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a:hover h2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a:hover h2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a:hover h2 {
     -webkit-transform: none;
             transform: none;
     -webkit-transition: none;
     transition: none;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app1,
-  #accueil .main-accueil .nav-app .nav-app-container .app3,
-  #accueil .main-accueil .nav-app .nav-app-container .app5 {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app2,
-  #accueil .main-accueil .nav-app .nav-app-container .app4,
-  #accueil .main-accueil .nav-app .nav-app-container .app6 {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app1 a {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a {
     -webkit-animation: scaleAnimation1 5s infinite;
             animation: scaleAnimation1 5s infinite;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app2 a {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a {
     -webkit-animation: scaleAnimation2 5s infinite;
             animation: scaleAnimation2 5s infinite;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app3 a {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a {
     -webkit-animation: scaleAnimation3 5s infinite;
             animation: scaleAnimation3 5s infinite;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app4 a {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a {
     -webkit-animation: scaleAnimation4 5s infinite;
             animation: scaleAnimation4 5s infinite;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app5 a {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a {
     -webkit-animation: scaleAnimation5 5s infinite;
             animation: scaleAnimation5 5s infinite;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app6 a {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a {
     -webkit-animation: scaleAnimation6 5s infinite;
             animation: scaleAnimation6 5s infinite;
   }
@@ -657,6 +671,65 @@ a {
     left: 50%;
     -webkit-transform: translateX(-51%);
             transform: translateX(-51%);
+  }
+}
+@media screen and (max-width: 950px) {
+  #accueil .main-accueil .navigation .nav-app {
+    display: block;
+    height: 800px;
+    width: 100%;
+    margin: 60px auto;
+    background-color: initial;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container {
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 {
+    height: 100%;
+    width: 100%;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a .img {
+    height: 150px;
+    width: 150px;
+  }
+  #accueil .aside-accueil {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-52%);
+            transform: translateX(-52%);
+    opacity: 0.9;
+  }
+  #accueil .aside-accueil .video-accueil {
+    width: 100%;
+    height: 100%;
+  }
+  #accueil .aside-accueil .video-accueil .e-logo {
+    display: none;
+  }
+  #accueil .aside-accueil .video-accueil video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media only screen and (max-width: 920px) and (orientation: landscape) {
@@ -698,13 +771,13 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
   }
-  #accueil .main-accueil .nav-app {
+  #accueil .main-accueil .navigation .nav-app {
     height: 85vh;
     width: 100%;
     margin-top: 0;
     padding-bottom: 40px;
   }
-  #accueil .main-accueil .nav-app .nav-app-container {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container {
     height: 100%;
     width: 99%;
     display: grid;
@@ -713,41 +786,41 @@ a {
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app1,
-  #accueil .main-accueil .nav-app .nav-app-container .app2,
-  #accueil .main-accueil .nav-app .nav-app-container .app3,
-  #accueil .main-accueil .nav-app .nav-app-container .app4,
-  #accueil .main-accueil .nav-app .nav-app-container .app5,
-  #accueil .main-accueil .nav-app .nav-app-container .app6 {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 {
     width: 280px;
     height: 100%;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app1 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app2 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app3 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app4 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app5 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app6 a {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a {
     width: 100%;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app1 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app2 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app3 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app4 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app5 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app6 a .img {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a .img {
     height: 80px;
     width: 80px;
     margin: 0;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app1,
-  #accueil .main-accueil .nav-app .nav-app-container .app3,
-  #accueil .main-accueil .nav-app .nav-app-container .app5 {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 {
     margin-left: 30px;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app1 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app3 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app5 a {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -760,15 +833,15 @@ a {
             align-items: center;
     gap: 10px;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app2,
-  #accueil .main-accueil .nav-app .nav-app-container .app4,
-  #accueil .main-accueil .nav-app .nav-app-container .app6 {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 {
     justify-self: end;
     margin-right: 30px;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app2 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app4 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app6 a {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -817,74 +890,23 @@ a {
             animation: fadeIn 30s;
   }
 }
-@media only screen and (750px <= width <= 950px) and (orientation: portrait) {
-  #accueil .main-accueil .nav-app {
-    height: 60vh;
-    width: 50%;
-    margin-top: 30px;
-  }
-  #accueil .main-accueil .nav-app .nav-app-container {
-    height: 100%;
-    width: 100%;
-  }
-  #accueil .main-accueil .nav-app .nav-app-container .app1,
-  #accueil .main-accueil .nav-app .nav-app-container .app2,
-  #accueil .main-accueil .nav-app .nav-app-container .app3,
-  #accueil .main-accueil .nav-app .nav-app-container .app4,
-  #accueil .main-accueil .nav-app .nav-app-container .app5,
-  #accueil .main-accueil .nav-app .nav-app-container .app6 {
-    height: 100%;
-    width: 100%;
-  }
-  #accueil .main-accueil .nav-app .nav-app-container .app1 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app2 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app3 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app4 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app5 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app6 a .img {
-    height: 150px;
-    width: 150px;
-  }
-  #accueil .aside-accueil {
-    position: absolute;
-    height: 100vh;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-52%);
-            transform: translateX(-52%);
-    opacity: 0.9;
-  }
-  #accueil .aside-accueil .video-accueil {
-    width: 100%;
-    height: 100%;
-  }
-  #accueil .aside-accueil .video-accueil .e-logo {
-    display: none;
-  }
-  #accueil .aside-accueil .video-accueil video {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-@media only screen and (max-width: 750px) and (orientation: portrait) {
+@media screen and (max-width: 750px) {
   #accueil h1,
   #accueil h2 {
     font-size: 0.7rem;
   }
-  #accueil .main-accueil .nav-app {
+  #accueil .main-accueil .navigation .nav-app {
     height: 70vh;
     width: 100%;
     max-width: 300px;
     margin-top: 30px;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app1 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app2 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app3 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app4 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app5 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app6 a .img {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a .img {
     height: 120px;
     width: 120px;
   }
@@ -912,7 +934,7 @@ a {
   #accueil h2 {
     font-size: 0.65rem;
   }
-  #accueil .main-accueil .nav-app {
+  #accueil .main-accueil .navigation .nav-app {
     height: 70vh;
     margin-top: 30px;
     display: -webkit-box;
@@ -922,16 +944,16 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #accueil .main-accueil .nav-app .nav-app-container {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container {
     height: 100%;
     max-width: 280px;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app1 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app2 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app3 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app4 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app5 a .img,
-  #accueil .main-accueil .nav-app .nav-app-container .app6 a .img {
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a .img {
     height: 110px;
     width: 110px;
   }
