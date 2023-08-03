@@ -810,7 +810,8 @@ a {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 20vh;
+    height: 15vh;
+    width: 100%;
     gap: 20%;
   }
   #accueil .main-accueil .imagesbec .image1,
@@ -832,8 +833,12 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
   }
-  #accueil .main-accueil .navigation .nav-app {
+  #accueil .main-accueil .navigation {
     height: 85vh;
+    width: 100%;
+  }
+  #accueil .main-accueil .navigation .nav-app {
+    height: 100%;
     width: 100%;
     margin-top: 0;
     padding-bottom: 40px;
