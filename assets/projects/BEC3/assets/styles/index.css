@@ -662,7 +662,7 @@ a {
 @media only screen and (max-width: 920px) and (orientation: landscape) {
   #accueil h1,
   #accueil h2 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   #accueil .main-accueil {
     position: relative;
@@ -676,17 +676,19 @@ a {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    height: 20vh;
     gap: 20%;
   }
   #accueil .main-accueil .imagesbec .image1,
   #accueil .main-accueil .imagesbec .image2 {
     width: 200px;
-    height: 20vh;
+    height: 15vh;
   }
   #accueil .main-accueil .imagesbec .image1 {
     background-image: url("../img/bieres_et_chopes.png");
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
     -webkit-transform: skew(5deg, -5deg);
             transform: skew(5deg, -5deg);
   }
@@ -697,24 +699,19 @@ a {
     background-repeat: no-repeat;
   }
   #accueil .main-accueil .nav-app {
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
+    height: 85vh;
+    width: 100%;
     margin-top: 0;
-    top: 0;
-    left: 0;
-    display: block;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding-bottom: 40px;
   }
   #accueil .main-accueil .nav-app .nav-app-container {
-    height: 95%;
-    width: 95%;
-    gap: 20px;
+    height: 100%;
+    width: 99%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   #accueil .main-accueil .nav-app .nav-app-container .app1,
   #accueil .main-accueil .nav-app .nav-app-container .app2,
@@ -722,7 +719,16 @@ a {
   #accueil .main-accueil .nav-app .nav-app-container .app4,
   #accueil .main-accueil .nav-app .nav-app-container .app5,
   #accueil .main-accueil .nav-app .nav-app-container .app6 {
-    border-radius: 15px;
+    width: 280px;
+    height: 100%;
+  }
+  #accueil .main-accueil .nav-app .nav-app-container .app1 a,
+  #accueil .main-accueil .nav-app .nav-app-container .app2 a,
+  #accueil .main-accueil .nav-app .nav-app-container .app3 a,
+  #accueil .main-accueil .nav-app .nav-app-container .app4 a,
+  #accueil .main-accueil .nav-app .nav-app-container .app5 a,
+  #accueil .main-accueil .nav-app .nav-app-container .app6 a {
+    width: 100%;
   }
   #accueil .main-accueil .nav-app .nav-app-container .app1 a .img,
   #accueil .main-accueil .nav-app .nav-app-container .app2 a .img,
@@ -732,25 +738,37 @@ a {
   #accueil .main-accueil .nav-app .nav-app-container .app6 a .img {
     height: 80px;
     width: 80px;
+    margin: 0;
+  }
+  #accueil .main-accueil .nav-app .nav-app-container .app1,
+  #accueil .main-accueil .nav-app .nav-app-container .app3,
+  #accueil .main-accueil .nav-app .nav-app-container .app5 {
+    margin-left: 30px;
   }
   #accueil .main-accueil .nav-app .nav-app-container .app1 a,
   #accueil .main-accueil .nav-app .nav-app-container .app3 a,
   #accueil .main-accueil .nav-app .nav-app-container .app5 a {
-    float: left;
-    margin-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     gap: 10px;
   }
+  #accueil .main-accueil .nav-app .nav-app-container .app2,
+  #accueil .main-accueil .nav-app .nav-app-container .app4,
+  #accueil .main-accueil .nav-app .nav-app-container .app6 {
+    justify-self: end;
+    margin-right: 30px;
+  }
   #accueil .main-accueil .nav-app .nav-app-container .app2 a,
   #accueil .main-accueil .nav-app .nav-app-container .app4 a,
   #accueil .main-accueil .nav-app .nav-app-container .app6 a {
-    float: right;
-    margin-right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
