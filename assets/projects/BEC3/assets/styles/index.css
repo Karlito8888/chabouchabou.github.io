@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
 * {
@@ -319,6 +320,9 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
 }
+#accueil .main-accueil .imagesbec {
+  display: none;
+}
 #accueil .main-accueil .nav-app {
   aspect-ratio: 3/2;
   height: 65vh;
@@ -338,7 +342,7 @@ a {
 }
 #accueil .main-accueil .nav-app .nav-app-container {
   height: 90%;
-  width: 100%;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,7 +537,6 @@ a {
     display: block;
   }
   #accueil .main-accueil {
-    position: relative;
     height: 100vh;
     width: 100%;
     background-image: none;
@@ -542,18 +545,26 @@ a {
   #accueil .main-accueil::after {
     display: none;
   }
-  #accueil .main-accueil .nav-app {
-    height: 80vh;
-    width: 90%;
+  #accueil .main-accueil .imagebec {
     margin: 0 auto;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+  }
+  #accueil .main-accueil .nav-app {
+    aspect-ratio: auto;
+    display: block;
+    height: 80vh;
+    min-width: 100%;
+    margin: 35px auto;
     background-color: initial;
   }
   #accueil .main-accueil .nav-app .nav-app-container {
-    -ms-flex-line-pack: space-evenly;
-        align-content: space-evenly;
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   #accueil .main-accueil .nav-app .nav-app-container .app1 a,
   #accueil .main-accueil .nav-app .nav-app-container .app2 a,
@@ -561,6 +572,7 @@ a {
   #accueil .main-accueil .nav-app .nav-app-container .app4 a,
   #accueil .main-accueil .nav-app .nav-app-container .app5 a,
   #accueil .main-accueil .nav-app .nav-app-container .app6 a {
+    width: 200px;
     -webkit-transition: none;
     transition: none;
   }
@@ -601,39 +613,41 @@ a {
     -webkit-transition: none;
     transition: none;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app1 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app3 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app5 a {
-    float: left;
-    margin-left: 5%;
+  #accueil .main-accueil .nav-app .nav-app-container .app1,
+  #accueil .main-accueil .nav-app .nav-app-container .app3,
+  #accueil .main-accueil .nav-app .nav-app-container .app5 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app2 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app4 a,
-  #accueil .main-accueil .nav-app .nav-app-container .app6 a {
-    float: right;
-    margin-right: 5%;
+  #accueil .main-accueil .nav-app .nav-app-container .app2,
+  #accueil .main-accueil .nav-app .nav-app-container .app4,
+  #accueil .main-accueil .nav-app .nav-app-container .app6 {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app1 {
+  #accueil .main-accueil .nav-app .nav-app-container .app1 a {
     -webkit-animation: scaleAnimation1 5s infinite;
             animation: scaleAnimation1 5s infinite;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app2 {
+  #accueil .main-accueil .nav-app .nav-app-container .app2 a {
     -webkit-animation: scaleAnimation2 5s infinite;
             animation: scaleAnimation2 5s infinite;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app3 {
+  #accueil .main-accueil .nav-app .nav-app-container .app3 a {
     -webkit-animation: scaleAnimation3 5s infinite;
             animation: scaleAnimation3 5s infinite;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app4 {
+  #accueil .main-accueil .nav-app .nav-app-container .app4 a {
     -webkit-animation: scaleAnimation4 5s infinite;
             animation: scaleAnimation4 5s infinite;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app5 {
+  #accueil .main-accueil .nav-app .nav-app-container .app5 a {
     -webkit-animation: scaleAnimation5 5s infinite;
             animation: scaleAnimation5 5s infinite;
   }
-  #accueil .main-accueil .nav-app .nav-app-container .app6 {
+  #accueil .main-accueil .nav-app .nav-app-container .app6 a {
     -webkit-animation: scaleAnimation6 5s infinite;
             animation: scaleAnimation6 5s infinite;
   }
@@ -653,16 +667,43 @@ a {
   #accueil .main-accueil {
     position: relative;
   }
-  #accueil .main-accueil .nav-app {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    margin-top: 0;
-    top: 0;
-    left: 0;
+  #accueil .main-accueil .imagebec {
+    display: none;
+  }
+  #accueil .main-accueil .imagesbec {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 20%;
+  }
+  #accueil .main-accueil .imagesbec .image1,
+  #accueil .main-accueil .imagesbec .image2 {
+    width: 200px;
+    height: 20vh;
+  }
+  #accueil .main-accueil .imagesbec .image1 {
+    background-image: url("../img/bieres_et_chopes.png");
+    background-position: center;
+    background-size: contain;
+    -webkit-transform: skew(5deg, -5deg);
+            transform: skew(5deg, -5deg);
+  }
+  #accueil .main-accueil .imagesbec .image2 {
+    background-image: url("../img/specialités.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #accueil .main-accueil .nav-app {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    display: block;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
