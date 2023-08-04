@@ -1,1 +1,1146 @@
-@charset "UTF-8";@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Calistoga&display=swap);*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}@-webkit-keyframes fadeIn{0%,50%{opacity:0}100%{opacity:1}}@keyframes fadeIn{0%,50%{opacity:0}100%{opacity:1}}@media (max-width:1050px){@-webkit-keyframes fadeIn{0%,50%{opacity:0}100%{opacity:1}}@keyframes fadeIn{0%,50%{opacity:0}100%{opacity:1}}}@-webkit-keyframes scaleAnimation1{0%,100%,20%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(1.15);transform:scale(1.15)}}@keyframes scaleAnimation1{0%,100%,20%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(1.15);transform:scale(1.15)}}@-webkit-keyframes scaleAnimation2{0%,100%,70%,90%{-webkit-transform:scale(1);transform:scale(1)}71%{-webkit-transform:scale(1.15);transform:scale(1.15)}}@keyframes scaleAnimation2{0%,100%,70%,90%{-webkit-transform:scale(1);transform:scale(1)}71%{-webkit-transform:scale(1.15);transform:scale(1.15)}}@-webkit-keyframes scaleAnimation3{0%,100%,60%,75%{-webkit-transform:scale(1);transform:scale(1)}61%{-webkit-transform:scale(1.15);transform:scale(1.15)}}@keyframes scaleAnimation3{0%,100%,60%,75%{-webkit-transform:scale(1);transform:scale(1)}61%{-webkit-transform:scale(1.15);transform:scale(1.15)}}@-webkit-keyframes scaleAnimation4{0%,10%,100%,25%{-webkit-transform:scale(1);transform:scale(1)}11%{-webkit-transform:scale(1.15);transform:scale(1.15)}}@keyframes scaleAnimation4{0%,10%,100%,25%{-webkit-transform:scale(1);transform:scale(1)}11%{-webkit-transform:scale(1.15);transform:scale(1.15)}}@-webkit-keyframes scaleAnimation5{0%,100%,20%,35%{-webkit-transform:scale(1);transform:scale(1)}21%{-webkit-transform:scale(1.15);transform:scale(1.15)}}@keyframes scaleAnimation5{0%,100%,20%,35%{-webkit-transform:scale(1);transform:scale(1)}21%{-webkit-transform:scale(1.15);transform:scale(1.15)}}@-webkit-keyframes scaleAnimation6{0%,100%,50%,65%{-webkit-transform:scale(1);transform:scale(1)}51%{-webkit-transform:scale(1.15);transform:scale(1.15)}}@keyframes scaleAnimation6{0%,100%,50%,65%{-webkit-transform:scale(1);transform:scale(1)}51%{-webkit-transform:scale(1.15);transform:scale(1.15)}}body{-webkit-box-sizing:border-box;box-sizing:border-box;font-family:Calistoga,cursive;letter-spacing:1px;overflow-x:hidden}h1,h2{text-shadow:0 0 20px #000}a{text-decoration:none;text-align:center}@media screen and (max-width:1550px){#accueil{background-color:#000;height:100vh;width:100%;font-size:16px;letter-spacing:1px;display:grid;grid-template-columns:1fr 690px;grid-template-areas:"mai asi"}#accueil h1,#accueil h2{color:#fff;font-size:.8rem;margin-top:5px}#accueil .main-accueil{position:relative;grid-area:mai;height:100vh;width:calc(100vw - 690px);background-image:-webkit-gradient(linear,left top,right top,from(rgba(146,146,146,0)),color-stop(70%,rgba(0,0,0,.66)),to(#000)),-webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,0)),color-stop(70%,rgba(255,255,255,0)),color-stop(85%,rgba(255,255,255,.775))),url("../img/Shop/chope-bouguenais.jpg");background-image:linear-gradient(to right,rgba(146,146,146,0) 0,rgba(0,0,0,.66) 70%,#000 100%),linear-gradient(to top,rgba(0,0,0,0) 0,rgba(255,255,255,0) 70%,rgba(255,255,255,.775) 85%),url("../img/Shop/chope-bouguenais.jpg");background-position:center;background-size:cover;background-attachment:local}#accueil .main-accueil::after{content:"";position:absolute;top:0;right:0;height:100vh;width:3px;background-color:#000}#accueil .main-accueil .imagebec{height:20vh;width:90%;margin:10px auto;background-image:url("../img/bec_specialites_de_bieres.png");background-position:center;background-repeat:no-repeat;background-size:contain}#accueil .main-accueil .imagesbec{display:none}#accueil .main-accueil .navigation{height:80vh;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#accueil .main-accueil .navigation .nav-app{height:85%;width:65%;min-width:300px;max-width:380px;margin:0 auto;background-color:rgba(128,128,128,.337);border-radius:30px;z-index:20;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#accueil .main-accueil .navigation .nav-app .nav-app-container{height:90%;width:100vw;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-line-pack:distribute;align-content:space-around;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1,#accueil .main-accueil .navigation .nav-app .nav-app-container .app2,#accueil .main-accueil .navigation .nav-app .nav-app-container .app3,#accueil .main-accueil .navigation .nav-app .nav-app-container .app4,#accueil .main-accueil .navigation .nav-app .nav-app-container .app5,#accueil .main-accueil .navigation .nav-app .nav-app-container .app6{height:31%;width:45%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a{height:100%;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a:hover,#accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a:hover,#accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a:hover,#accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a:hover,#accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a:hover,#accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a:hover{-webkit-transform:scale(1.05);transform:scale(1.05)}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a:hover .img,#accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a:hover .img,#accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a:hover .img,#accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a:hover .img,#accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a:hover .img,#accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a:hover .img{-webkit-box-shadow:1px 1px 10px 2px rgba(51,51,51,.88);box-shadow:1px 1px 10px 2px rgba(51,51,51,.88);-webkit-transition:-webkit-box-shadow .2s ease-in-out;transition:box-shadow .2s ease-in-out;transition:box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a:hover h1,#accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a:hover h2,#accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a:hover h1,#accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a:hover h2,#accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a:hover h1,#accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a:hover h2,#accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a:hover h1,#accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a:hover h2,#accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a:hover h1,#accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a:hover h2,#accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a:hover h1,#accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a:hover h2{-webkit-transform:scale(1.2);transform:scale(1.2);-webkit-transition:-webkit-transform .2s ease-in-out;transition:transform .2s ease-in-out;transition:transform .2s ease-in-out,-webkit-transform .2s ease-in-out;text-align:center}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a .img,#accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a .img,#accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a .img,#accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a .img,#accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a .img,#accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a .img{aspect-ratio:1/1;height:100%;width:auto;border-radius:15px;margin:0 auto}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1 .img{background:url("../img/patrick-jacquin.webp") left/cover no-repeat}#accueil .main-accueil .navigation .nav-app .nav-app-container .app2 .img{background:url("../img/map.png") center/cover no-repeat}#accueil .main-accueil .navigation .nav-app .nav-app-container .app2 h1{letter-spacing:2px}#accueil .main-accueil .navigation .nav-app .nav-app-container .app2 h1 span{color:#fe6b19}#accueil .main-accueil .navigation .nav-app .nav-app-container .app3 .img{background:url("../img/tireuse.jpg") center/cover no-repeat}#accueil .main-accueil .navigation .nav-app .nav-app-container .app4 .img{background:url("../img/coffret.jpg") left/cover no-repeat}#accueil .main-accueil .navigation .nav-app .nav-app-container .app5 .img{background:url("../img/write.jpg") center/cover no-repeat}#accueil .main-accueil .navigation .nav-app .nav-app-container .app6 .img{position:relative;background:url("../img/canvas.png") center/cover no-repeat}#accueil .main-accueil .navigation .nav-app .nav-app-container .app6 .img::after{content:"1";position:absolute;top:0;right:0;-webkit-transform:translate(50%,-50%);transform:translate(50%,-50%);color:#fff;background-color:red;border-radius:50%;padding:3px}#accueil .aside-accueil{grid-area:asi;height:100vh;width:100%}#accueil .aside-accueil .video-accueil{width:100%;max-width:690px;height:100%;position:relative}#accueil .aside-accueil .video-accueil video{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}#accueil .aside-accueil .video-accueil .e-logo{position:absolute;width:170px;height:170px;top:50%;left:50%;-webkit-transform:translate(-45%,-90%);transform:translate(-45%,-90%);opacity:.6;z-index:2}#accueil .aside-accueil .video-accueil .e-logo img{width:100%;height:auto;-webkit-animation:30s fadeIn;animation:30s fadeIn}}@media screen and (max-width:992px){#accueil{display:block;position:relative}#accueil h1,#accueil h2{color:#fff;font-size:1rem;margin-top:5px}#accueil .main-accueil{height:100vh;width:100%;background-image:none;z-index:20}#accueil .main-accueil::after{display:none}#accueil .main-accueil .imagebec{margin:0 auto}#accueil .main-accueil .navigation{height:80vh;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#accueil .main-accueil .navigation .nav-app{display:block;height:90%;width:100%;min-width:-webkit-fit-content;min-width:-moz-fit-content;min-width:fit-content;background-color:initial;z-index:20;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#accueil .main-accueil .navigation .nav-app .nav-app-container{height:95%;width:95%;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1,#accueil .main-accueil .navigation .nav-app .nav-app-container .app2,#accueil .main-accueil .navigation .nav-app .nav-app-container .app3,#accueil .main-accueil .navigation .nav-app .nav-app-container .app4,#accueil .main-accueil .navigation .nav-app .nav-app-container .app5,#accueil .main-accueil .navigation .nav-app .nav-app-container .app6{height:30%;width:49%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a{width:80%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1,#accueil .main-accueil .navigation .nav-app .nav-app-container .app3,#accueil .main-accueil .navigation .nav-app .nav-app-container .app5{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}#accueil .main-accueil .navigation .nav-app .nav-app-container .app2,#accueil .main-accueil .navigation .nav-app .nav-app-container .app4,#accueil .main-accueil .navigation .nav-app .nav-app-container .app6{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a{-webkit-animation:5s infinite scaleAnimation1;animation:5s infinite scaleAnimation1}#accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a{-webkit-animation:5s infinite scaleAnimation2;animation:5s infinite scaleAnimation2}#accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a{-webkit-animation:5s infinite scaleAnimation3;animation:5s infinite scaleAnimation3}#accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a{-webkit-animation:5s infinite scaleAnimation4;animation:5s infinite scaleAnimation4}#accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a{-webkit-animation:5s infinite scaleAnimation5;animation:5s infinite scaleAnimation5}#accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a{-webkit-animation:5s infinite scaleAnimation6;animation:5s infinite scaleAnimation6}#accueil .aside-accueil{position:absolute;height:100vh;width:100%;top:0;left:0}#accueil .aside-accueil .video-accueil{height:100%;width:100%;max-width:690px;margin:0 auto;left:-1%;position:relative}#accueil .aside-accueil .video-accueil video{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}#accueil .aside-accueil .video-accueil .e-logo{position:absolute;width:170px;height:170px;top:50%;left:50%;-webkit-transform:translate(-45%,-90%);transform:translate(-45%,-90%);opacity:.6;z-index:2}#accueil .aside-accueil .video-accueil .e-logo img{width:100%;height:auto;-webkit-animation:30s fadeIn;animation:30s fadeIn}}@media only screen and (max-width:992px) and (orientation:landscape){#accueil{display:block;position:relative}#accueil h1,#accueil h2{color:#fff;font-size:.9rem;margin-top:5px;text-shadow:0 0 20px #000}#accueil .main-accueil{height:100vh;width:100%;background-image:none;z-index:20}#accueil .main-accueil .imagebec,#accueil .main-accueil::after{display:none}#accueil .main-accueil .imagesbec{width:100%;height:15vh;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;gap:25%}#accueil .main-accueil .imagesbec .image1,#accueil .main-accueil .imagesbec .image2{width:200px;height:15vh}#accueil .main-accueil .imagesbec .image1{background-image:url("../img/bieres_et_chopes.png");background-position:center;background-size:contain;background-repeat:no-repeat;-webkit-transform:skew(5deg,-5deg);transform:skew(5deg,-5deg)}#accueil .main-accueil .imagesbec .image2{background-image:url("../img/specialités.png");background-position:center;background-size:contain;background-repeat:no-repeat}#accueil .main-accueil .navigation{height:80vh;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#accueil .main-accueil .navigation .nav-app{display:block;height:90%;width:100%;min-width:95vw;background-color:initial;z-index:20;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#accueil .main-accueil .navigation .nav-app .nav-app-container{height:100%;width:100%;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1,#accueil .main-accueil .navigation .nav-app .nav-app-container .app2,#accueil .main-accueil .navigation .nav-app .nav-app-container .app3,#accueil .main-accueil .navigation .nav-app .nav-app-container .app4,#accueil .main-accueil .navigation .nav-app .nav-app-container .app5,#accueil .main-accueil .navigation .nav-app .nav-app-container .app6{height:30%;width:49%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a .img,#accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a .img,#accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a .img,#accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a .img,#accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a .img,#accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a .img{margin:0 5%}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1,#accueil .main-accueil .navigation .nav-app .nav-app-container .app3,#accueil .main-accueil .navigation .nav-app .nav-app-container .app5{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a{width:90%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#accueil .main-accueil .navigation .nav-app .nav-app-container .app2,#accueil .main-accueil .navigation .nav-app .nav-app-container .app4,#accueil .main-accueil .navigation .nav-app .nav-app-container .app6{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}#accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a{width:90%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a{-webkit-animation:5s infinite scaleAnimation1;animation:5s infinite scaleAnimation1}#accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a{-webkit-animation:5s infinite scaleAnimation2;animation:5s infinite scaleAnimation2}#accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a{-webkit-animation:5s infinite scaleAnimation3;animation:5s infinite scaleAnimation3}#accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a{-webkit-animation:5s infinite scaleAnimation4;animation:5s infinite scaleAnimation4}#accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a{-webkit-animation:5s infinite scaleAnimation5;animation:5s infinite scaleAnimation5}#accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a{-webkit-animation:5s infinite scaleAnimation6;animation:5s infinite scaleAnimation6}#accueil .aside-accueil{position:absolute;height:100vh;width:100%;top:0;left:0}#accueil .aside-accueil .video-accueil{height:100%;width:100%;max-width:690px;margin:0 auto;position:relative}#accueil .aside-accueil .video-accueil video{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}#accueil .aside-accueil .video-accueil .e-logo{position:absolute;width:100px;height:100px;top:50%;left:50%;-webkit-transform:translate(-45%,-90%);transform:translate(-45%,-90%);opacity:.6;z-index:2}#accueil .aside-accueil .video-accueil .e-logo img{width:100%;height:auto;-webkit-animation:30s fadeIn;animation:30s fadeIn}}@media screen and (max-width:600px){#accueil{display:block;position:relative}#accueil h1,#accueil h2{color:#fff;font-size:.8rem;margin-top:5px}#accueil .main-accueil{height:100vh;width:100%;background-image:none;z-index:20}#accueil .main-accueil::after{display:none}#accueil .main-accueil .imagebec{margin:0 auto}#accueil .main-accueil .navigation{height:80vh;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#accueil .main-accueil .navigation .nav-app{display:block;height:90%;width:100%;min-width:-webkit-fit-content;min-width:-moz-fit-content;min-width:fit-content;background-color:initial;z-index:20;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#accueil .main-accueil .navigation .nav-app .nav-app-container{height:95%;width:95%;max-width:350px;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1,#accueil .main-accueil .navigation .nav-app .nav-app-container .app2,#accueil .main-accueil .navigation .nav-app .nav-app-container .app3,#accueil .main-accueil .navigation .nav-app .nav-app-container .app4,#accueil .main-accueil .navigation .nav-app .nav-app-container .app5,#accueil .main-accueil .navigation .nav-app .nav-app-container .app6{height:25%;width:49%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a,#accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a{width:100%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1,#accueil .main-accueil .navigation .nav-app .nav-app-container .app3,#accueil .main-accueil .navigation .nav-app .nav-app-container .app5{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}#accueil .main-accueil .navigation .nav-app .nav-app-container .app2,#accueil .main-accueil .navigation .nav-app .nav-app-container .app4,#accueil .main-accueil .navigation .nav-app .nav-app-container .app6{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}#accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a{-webkit-animation:5s infinite scaleAnimation1;animation:5s infinite scaleAnimation1}#accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a{-webkit-animation:5s infinite scaleAnimation2;animation:5s infinite scaleAnimation2}#accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a{-webkit-animation:5s infinite scaleAnimation3;animation:5s infinite scaleAnimation3}#accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a{-webkit-animation:5s infinite scaleAnimation4;animation:5s infinite scaleAnimation4}#accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a{-webkit-animation:5s infinite scaleAnimation5;animation:5s infinite scaleAnimation5}#accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a{-webkit-animation:5s infinite scaleAnimation6;animation:5s infinite scaleAnimation6}#accueil .aside-accueil{position:absolute;height:100vh;width:100%;top:0;left:0}#accueil .aside-accueil .video-accueil{height:100%;width:100%;max-width:690px;margin:0 auto;left:-3%;position:relative}#accueil .aside-accueil .video-accueil video{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}#accueil .aside-accueil .video-accueil .e-logo{position:absolute;width:170px;height:170px;top:50%;left:50%;-webkit-transform:translate(-45%,-90%);transform:translate(-45%,-90%);opacity:.6;z-index:2}#accueil .aside-accueil .video-accueil .e-logo img{width:100%;height:auto;-webkit-animation:30s fadeIn;animation:30s fadeIn}}
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 1050px) {
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+@-webkit-keyframes scaleAnimation1 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  1% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scaleAnimation1 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  1% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes scaleAnimation2 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  71% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scaleAnimation2 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  71% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes scaleAnimation3 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  61% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  75% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scaleAnimation3 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  61% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  75% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes scaleAnimation4 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  11% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scaleAnimation4 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  11% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes scaleAnimation5 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  21% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  35% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scaleAnimation5 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  21% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  35% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes scaleAnimation6 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  51% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  65% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scaleAnimation6 {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  51% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  65% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Calistoga", cursive;
+  letter-spacing: 1px;
+  overflow-x: hidden;
+}
+
+#accueil {
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+h1, h2 {
+  text-shadow: 0px 0px 20px #000000;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 1550px) {
+  #accueil {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: grid;
+    grid-template-columns: 1fr 690px;
+    grid-template-areas: "mai asi";
+  }
+  #accueil h1,
+  #accueil h2 {
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+  #accueil .main-accueil {
+    position: relative;
+    grid-area: mai;
+    height: 100vh;
+    width: calc(100vw - 690px);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(146, 146, 146, 0)), color-stop(70%, rgba(0, 0, 0, 0.66)), to(rgb(0, 0, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), color-stop(70%, rgba(255, 255, 255, 0)), color-stop(85%, rgba(255, 255, 255, 0.775))), url("../img/Shop/chope-bouguenais.jpg");
+    background-image: linear-gradient(to right, rgba(146, 146, 146, 0) 0%, rgba(0, 0, 0, 0.66) 70%, rgb(0, 0, 0) 100%), linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.775) 85%), url("../img/Shop/chope-bouguenais.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: local;
+  }
+  #accueil .main-accueil::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 3px;
+    background-color: black;
+  }
+  #accueil .main-accueil .imagebec {
+    height: 20vh;
+    width: 90%;
+    margin: 10px auto;
+    background-image: url("../img/bec_specialites_de_bieres.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #accueil .main-accueil .imagesbec {
+    display: none;
+  }
+  #accueil .main-accueil .navigation {
+    height: 80vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #accueil .main-accueil .navigation .nav-app {
+    height: 85%;
+    width: 65%;
+    min-width: 300px;
+    max-width: 380px;
+    margin: 0 auto;
+    background-color: rgba(128, 128, 128, 0.337);
+    border-radius: 30px;
+    z-index: 20;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container {
+    height: 90%;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 {
+    height: 31%;
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a:hover,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a:hover,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a:hover,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a:hover,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a:hover,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a:hover .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a:hover .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a:hover .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a:hover .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a:hover .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a:hover .img {
+    -webkit-box-shadow: 1px 1px 10px 2px rgba(51, 51, 51, 0.88);
+            box-shadow: 1px 1px 10px 2px rgba(51, 51, 51, 0.88);
+    -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+    transition: -webkit-box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a:hover h2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a:hover h2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a:hover h2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a:hover h2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a:hover h2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a:hover h1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a:hover h2 {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    text-align: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a .img {
+    aspect-ratio: 1/1;
+    height: 100%;
+    width: auto;
+    border-radius: 15px;
+    margin: 0 auto;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 .img {
+    background: url("../img/patrick-jacquin.webp");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 .img {
+    background: url("../img/map.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 h1 {
+    letter-spacing: 2px;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 h1 span {
+    color: #fe6b19;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 .img {
+    background: url("../img/tireuse.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 .img {
+    background: url("../img/coffret.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 .img {
+    background: url("../img/write.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 .img {
+    position: relative;
+    background: url("../img/canvas.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 .img::after {
+    content: "1";
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    padding: 3px;
+  }
+  #accueil .aside-accueil {
+    grid-area: asi;
+    height: 100vh;
+    width: 100%;
+  }
+  #accueil .aside-accueil .video-accueil {
+    width: 100%;
+    min-width: 690px;
+    height: 100%;
+    position: relative;
+  }
+  #accueil .aside-accueil .video-accueil video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #accueil .aside-accueil .video-accueil .e-logo {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-45%, -90%);
+            transform: translate(-45%, -90%);
+    opacity: 0.6;
+    z-index: 2;
+  }
+  #accueil .aside-accueil .video-accueil .e-logo img {
+    width: 100%;
+    height: auto;
+    -webkit-animation: fadeIn 30s;
+            animation: fadeIn 30s;
+  }
+}
+@media screen and (max-width: 992px) {
+  #accueil {
+    display: block;
+    position: relative;
+  }
+  #accueil h1,
+  #accueil h2 {
+    color: white;
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  #accueil .main-accueil {
+    height: 100vh;
+    width: 100%;
+    background-image: none;
+    z-index: 20;
+  }
+  #accueil .main-accueil::after {
+    display: none;
+  }
+  #accueil .main-accueil .imagebec {
+    margin: 0 auto;
+  }
+  #accueil .main-accueil .navigation {
+    height: 80vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #accueil .main-accueil .navigation .nav-app {
+    display: block;
+    height: 90%;
+    width: 100%;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    background-color: initial;
+    z-index: 20;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container {
+    height: 95%;
+    width: 95%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 {
+    height: 30%;
+    width: 49%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a {
+    width: 80%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a {
+    -webkit-animation: scaleAnimation1 5s infinite;
+            animation: scaleAnimation1 5s infinite;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a {
+    -webkit-animation: scaleAnimation2 5s infinite;
+            animation: scaleAnimation2 5s infinite;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a {
+    -webkit-animation: scaleAnimation3 5s infinite;
+            animation: scaleAnimation3 5s infinite;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a {
+    -webkit-animation: scaleAnimation4 5s infinite;
+            animation: scaleAnimation4 5s infinite;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a {
+    -webkit-animation: scaleAnimation5 5s infinite;
+            animation: scaleAnimation5 5s infinite;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a {
+    -webkit-animation: scaleAnimation6 5s infinite;
+            animation: scaleAnimation6 5s infinite;
+  }
+  #accueil .aside-accueil {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  #accueil .aside-accueil .video-accueil {
+    height: 100%;
+    width: 100%;
+    min-width: 690px;
+    margin: 0 auto;
+    left: -1%;
+    position: relative;
+  }
+  #accueil .aside-accueil .video-accueil video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #accueil .aside-accueil .video-accueil .e-logo {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-45%, -90%);
+            transform: translate(-45%, -90%);
+    opacity: 0.6;
+    z-index: 2;
+  }
+  #accueil .aside-accueil .video-accueil .e-logo img {
+    width: 100%;
+    height: auto;
+    -webkit-animation: fadeIn 30s;
+            animation: fadeIn 30s;
+  }
+}
+@media only screen and (max-width: 992px) and (orientation: landscape) {
+  #accueil {
+    display: block;
+    position: relative;
+  }
+  #accueil h1,
+  #accueil h2 {
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    text-shadow: 0px 0px 20px #000000;
+  }
+  #accueil .main-accueil {
+    height: 100vh;
+    width: 100%;
+    background-image: none;
+    z-index: 20;
+  }
+  #accueil .main-accueil::after {
+    display: none;
+  }
+  #accueil .main-accueil .imagebec {
+    display: none;
+  }
+  #accueil .main-accueil .imagesbec {
+    width: 100%;
+    height: 15vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 25%;
+  }
+  #accueil .main-accueil .imagesbec .image1,
+  #accueil .main-accueil .imagesbec .image2 {
+    width: 200px;
+    height: 15vh;
+  }
+  #accueil .main-accueil .imagesbec .image1 {
+    background-image: url("../img/bieres_et_chopes.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transform: skew(5deg, -5deg);
+            transform: skew(5deg, -5deg);
+  }
+  #accueil .main-accueil .imagesbec .image2 {
+    background-image: url("../img/specialités.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #accueil .main-accueil .navigation {
+    height: 80vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #accueil .main-accueil .navigation .nav-app {
+    display: block;
+    height: 90%;
+    width: 100%;
+    min-width: 95vw;
+    background-color: initial;
+    z-index: 20;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 {
+    height: 30%;
+    width: 49%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a .img,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a .img {
+    margin: 0 5%;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a {
+    width: 90%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a {
+    width: 90%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a {
+    -webkit-animation: scaleAnimation1 5s infinite;
+            animation: scaleAnimation1 5s infinite;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a {
+    -webkit-animation: scaleAnimation2 5s infinite;
+            animation: scaleAnimation2 5s infinite;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a {
+    -webkit-animation: scaleAnimation3 5s infinite;
+            animation: scaleAnimation3 5s infinite;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a {
+    -webkit-animation: scaleAnimation4 5s infinite;
+            animation: scaleAnimation4 5s infinite;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a {
+    -webkit-animation: scaleAnimation5 5s infinite;
+            animation: scaleAnimation5 5s infinite;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a {
+    -webkit-animation: scaleAnimation6 5s infinite;
+            animation: scaleAnimation6 5s infinite;
+  }
+  #accueil .aside-accueil {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  #accueil .aside-accueil .video-accueil {
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  #accueil .aside-accueil .video-accueil video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  #accueil .aside-accueil .video-accueil .e-logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-45%, -90%);
+            transform: translate(-45%, -90%);
+    opacity: 0.6;
+    z-index: 2;
+  }
+  #accueil .aside-accueil .video-accueil .e-logo img {
+    width: 100%;
+    height: auto;
+    -webkit-animation: fadeIn 30s;
+            animation: fadeIn 30s;
+  }
+}
+@media screen and (max-width: 600px) {
+  #accueil {
+    display: block;
+    position: relative;
+  }
+  #accueil h1,
+  #accueil h2 {
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+  #accueil .main-accueil {
+    height: 100vh;
+    width: 100%;
+    background-image: none;
+    z-index: 20;
+  }
+  #accueil .main-accueil::after {
+    display: none;
+  }
+  #accueil .main-accueil .imagebec {
+    margin: 0 auto;
+  }
+  #accueil .main-accueil .navigation {
+    height: 80vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #accueil .main-accueil .navigation .nav-app {
+    display: block;
+    height: 90%;
+    width: 100%;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    background-color: initial;
+    z-index: 20;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container {
+    height: 95%;
+    width: 95%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 {
+    height: 25%;
+    width: 49%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4,
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app1 a {
+    -webkit-animation: scaleAnimation1 5s infinite;
+            animation: scaleAnimation1 5s infinite;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app2 a {
+    -webkit-animation: scaleAnimation2 5s infinite;
+            animation: scaleAnimation2 5s infinite;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app3 a {
+    -webkit-animation: scaleAnimation3 5s infinite;
+            animation: scaleAnimation3 5s infinite;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app4 a {
+    -webkit-animation: scaleAnimation4 5s infinite;
+            animation: scaleAnimation4 5s infinite;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app5 a {
+    -webkit-animation: scaleAnimation5 5s infinite;
+            animation: scaleAnimation5 5s infinite;
+  }
+  #accueil .main-accueil .navigation .nav-app .nav-app-container .app6 a {
+    -webkit-animation: scaleAnimation6 5s infinite;
+            animation: scaleAnimation6 5s infinite;
+  }
+  #accueil .aside-accueil {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  #accueil .aside-accueil .video-accueil {
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    margin: 0 auto;
+    left: -2%;
+    position: relative;
+  }
+  #accueil .aside-accueil .video-accueil video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #accueil .aside-accueil .video-accueil .e-logo {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-45%, -90%);
+            transform: translate(-45%, -90%);
+    opacity: 0.6;
+    z-index: 2;
+  }
+  #accueil .aside-accueil .video-accueil .e-logo img {
+    width: 100%;
+    height: auto;
+    -webkit-animation: fadeIn 30s;
+            animation: fadeIn 30s;
+  }
+}/*# sourceMappingURL=index.css.map */
