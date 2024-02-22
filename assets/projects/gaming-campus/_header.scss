@@ -1,0 +1,42 @@
+.main-header {
+  background-image: image-set(
+    url("./assets/img/bg-small.webp") 1x,
+    url("./assets/img/bg-medium.webp") 2x,
+    url("./assets/img/bg-big.webp") 3x
+  );
+
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding: 60px;
+
+  #logo {
+    img {
+      width: 70%;
+    }
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 30px 0 35px;
+  }
+  button {
+    padding: 15px 30px;
+    letter-spacing: 2px;
+
+    i {
+      transform: translateX(5px);
+    }
+  }
+}
+
+.header-text {
+  padding: 45px 0;
+  max-width: 1100px;
+  font-size: 1.2rem;
+  line-height: 34px;
+  margin: 0 auto;
+}
