@@ -84,7 +84,7 @@ header {
   font-family: "Victor Mono", monospace;
   font-size: 16px;
   letter-spacing: 3px;
-  background-image: url("../img/bg-img.png");
+  background-image: url("../assets/img/bg-img.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
