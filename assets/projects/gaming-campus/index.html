@@ -35,7 +35,7 @@
     <meta property="og:image:alt" content="Logo du site Gaming Campus" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="fr_FR" />
-    <link href="./index.css" rel="stylesheet" />
+    <link href="./styles/index.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -46,23 +46,25 @@
   </head>
   <body>
     <nav>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" id="icons"></label>
       <ul>
-        <li>accueil</li>
-        <li>business school</li>
-        <li>ecole esport</li>
-        <li>cours de jeux vidéo</li>
-        <li>le campus</li>
+        <li><a href="#accueil">accueil</a></li>
+        <li><a href="#business">business school</a></li>
         <li><a href="#news-part">newsroom</a></li>
-        <li>parents</li>
-        <!-- <li id="language">FR | EN</li> -->
+        <li><a href="#cont">contact</a></li>
       </ul>
     </nav>
-    <header>
+    <header id="accueil">
       <div class="main-header">
         <div id="logo">
           <img src="./assets/img/logo-gc-hero.png" alt="logo" />
         </div>
-        <h1>passion. professionnalisme. performance.</h1>
+        <div class="title-header">
+          <span>passion,</span>
+          <span>professionnalisme</span>
+          <span>et performance.</span>
+        </div>
         <button>
           gaming campus en video <i class="fa-solid fa-angle-right"></i>
         </button>
@@ -70,12 +72,12 @@
     </header>
     <div class="header-text">
       <p>
-        Imaginé par des professionnels des jeux vidéo et de l'éducation, Gaming
+        Imaginé par des professionnels des jeux vidéo et de l'éducation,<br>Gaming
         Campus est un lieu unique pour révéler les talents et développer les
         compétences.
       </p>
     </div>
-    <section class="icon-part">
+    <section class="icon-part" id="business">
       <div class="icon-part-container">
         <div class="list-icon-part">
           <div class="lip-logo">
@@ -181,7 +183,7 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="cont">
       <div class="contact-container">
         <div class="contact-list">
           <div class="list">

@@ -1,6 +1,19 @@
 @font-face {
   font-family: "Montserrat";
-  src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
+  src: url(../assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+$color-1: #f39659;
+$color-2: #eb555e;
+$color-3: rgb(242, 242, 242);
+$color-4: #575757;
+$color-5: #551a8b;
+$white: rgb(237, 237, 237);
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
@@ -21,16 +34,15 @@ body {
   text-align: center;
   font-size: 16px;
   letter-spacing: 1px;
-  scroll-behavior: smooth;
+  background: $white;
+  overflow-x: hidden;
 }
-
-
 
 button {
   background: none;
   outline: none;
-  border: 1px solid whitesmoke;
-  color: white;
+  border: 1px solid $color-3;
+  color: $color-3;
   text-transform: uppercase;
   font-weight: 700;
   transition: 0.4s ease;
@@ -38,55 +50,13 @@ button {
 }
 
 button:hover {
-  color: black;
-  background: whitesmoke;
+  color: $color-4;
+  background: $color-3;
 }
 
 a {
+  color: $color-5;
   text-decoration: none;
-}
-
-#language {
-  background: rgba(128, 128, 128, 0.25);
-  border-radius: 50px;
-  padding: 8px 16px;
-}
-
-
-
-
-
-
-.icon-part {
-  background: rgb(15, 15, 15);
-  padding: 65px 0;
-  color: whitesmoke;
-}
-
-.icon-part-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.lip-logo {
-  margin-bottom: 30px;
-}
-
-.icon-part h3 {
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.icon-part p {
-  width: 80%;
-  margin: 10px auto 20px;
-}
-
-.icon-part button {
-  padding: 9px 32px;
 }
 
 .news-part {
@@ -302,89 +272,89 @@ footer ul {
 
 /* *********** MEDIA QUERIES *************** */
 
-@media screen and (max-width: 895px) {
-  nav li {
-    font-size: 0.7rem;
-  }
+// @media screen and (max-width: 895px) {
+//   // nav li {
+//   //   font-size: 0.7rem;
+//   // }
 
 
-  .contact-list .list {
-    padding-left: 15px;
-  }
+//   .contact-list .list {
+//     padding-left: 15px;
+//   }
 
-  .list h6 {
-    font-size: 0.65rem;
-  }
+//   .list h6 {
+//     font-size: 0.65rem;
+//   }
 
-  .medias-logos img {
-    width: 40px;
-  }
+//   .medias-logos img {
+//     width: 40px;
+//   }
 
-  footer ul {
-    flex-wrap: wrap;
-  }
+//   footer ul {
+//     flex-wrap: wrap;
+//   }
 
-  footer li {
-    margin: 5px;
-  }
-}
+//   footer li {
+//     margin: 5px;
+//   }
+// }
 
-@media screen and (max-width: 704px) {
-  nav li {
-    display: none;
-  }
+// @media screen and (max-width: 704px) {
+//   // nav li {
+//   //   display: none;
+//   // }
 
-  /* .main-header {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom !important;
-  } */
+//   /* .main-header {
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: bottom !important;
+//   } */
 
-  .icon-part-container {
-    display: block;
-  }
+//   .icon-part-container {
+//     display: block;
+//   }
 
-  .icon-part {
-    padding: 0 0 30px;
-  }
+//   .icon-part {
+//     padding: 0 0 30px;
+//   }
 
-  .list-icon-part {
-    margin-top: 40px;
-  }
+//   .list-icon-part {
+//     margin-top: 40px;
+//   }
 
-  .header-news {
-    display: block;
-  }
+//   .header-news {
+//     display: block;
+//   }
 
-  .left-part {
-    width: 100%;
-  }
+//   .left-part {
+//     width: 100%;
+//   }
 
-  .left-part h2 {
-    text-align: center;
-  }
+//   .left-part h2 {
+//     text-align: center;
+//   }
 
-  .left-part p {
-    text-align: center;
-    margin-bottom: 10px;
-  }
+//   .left-part p {
+//     text-align: center;
+//     margin-bottom: 10px;
+//   }
 
-  .main-news-container {
-    display: block;
-  }
+//   .main-news-container {
+//     display: block;
+//   }
 
-  .main-news-container div {
-    max-width: 90%;
-    margin: 0 auto;
-    padding-bottom: 15px;
-    margin-top: 58px;
-  }
+//   .main-news-container div {
+//     max-width: 90%;
+//     margin: 0 auto;
+//     padding-bottom: 15px;
+//     margin-top: 58px;
+//   }
 
-  .main-news-container img {
-    width: 50%;
-  }
+//   .main-news-container img {
+//     width: 50%;
+//   }
 
-  .contact {
-    display: none;
-  }
-}
+//   .contact {
+//     display: none;
+//   }
+// }
