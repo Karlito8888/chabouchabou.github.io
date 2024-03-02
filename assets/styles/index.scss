@@ -1,5 +1,109 @@
-@import "../styles/settings";
-@import "../styles/layout/accueil";
-@import "../styles/layout/a-propos";
-@import "../styles/layout/mes-projets";
-@import "../styles/layout/contact";
+@import url("https://fonts.googleapis.com/css2?family=Victor+Mono:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  height: 100vh;
+  height: 100svh;
+  padding: 1.1rem;
+  font-family: "Victor Mono", monospace;
+  font-size: 16px;
+  background-image: url("../../assets/img/bg-img.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+
+  header {
+    height: 100%;
+    width: 100%;
+    letter-spacing: 1px;
+
+    div {
+      width: 100%;
+
+      h1,
+      h2 {
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font-size: clamp(1.5rem, 1.3182rem + 0.7273vw, 2rem);
+      }
+
+      h2 {
+        font-size: clamp(1.2rem, 1.0909rem + 0.4364vw, 1.5rem);
+      }
+
+      h3 {
+        font-size: clamp(0.9rem, 0.7909rem + 0.4364vw, 1.2rem);
+      }
+    }
+  }
+
+  main {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: transparent;
+  transition: transform 0.3s ease-in-out;
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.788);
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  border-style: none;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}
