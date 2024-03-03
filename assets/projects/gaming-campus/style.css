@@ -91,9 +91,9 @@ nav li:last-child:before {
 }
 
 .main-header {
-  background-image: image-set(url('./assets/img/bg-small.jpg') 1x,
-      url('./assets/img/bg-medium.jpg') 2x,
-      url('./assets/img/bg-big.jpg') 3x);
+  background-image: image-set(url('./assets/img/bg-small.webp') 1x,
+      url('./assets/img/bg-medium.webp') 2x,
+      url('./assets/img/bg-big.webp') 3x);
 
   background-position: center;
   background-size: cover;

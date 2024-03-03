@@ -38,6 +38,9 @@ a:visited {
 }
 body {
   background: url(../img/bg.jpg) fixed center/cover;
+  background-image: image-set(
+    "../img/bg.webp" 1x,
+  );
   text-align: center;
   font-family: $font2;
   max-width: 1300px;
