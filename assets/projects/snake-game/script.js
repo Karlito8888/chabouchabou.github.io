@@ -7,12 +7,57 @@ window.onload = () => {
     [DIRECTIONS.DOWN]: "down",
   };
 
+  const setDirection = (newDirection) => {
+    if (!myGame.isCountdownInProgress) {
+      myGame.snakee.setDirection(newDirection);
+    }
+  };
+
+  const chevrons = [
+    document.getElementById("up-left"),
+    document.getElementById("right-left"),
+    document.getElementById("left-left"),
+    document.getElementById("down-left"),
+    document.getElementById("up-right"),
+    document.getElementById("right-right"),
+    document.getElementById("left-right"),
+    document.getElementById("down-right"),
+  ];
+
+  chevrons.forEach((chevron) => {
+    chevron.addEventListener("click", () => {
+      const direction = chevron.id.split("-")[0]; // Obtient la direction à partir de l'ID
+      setDirection(direction);
+    });
+  });
+
+  function drawRoundedRect(ctx, x, y, width, height, radius) {
+    ctx.beginPath();
+    ctx.moveTo(x + radius, y);
+    ctx.lineTo(x + width - radius, y);
+    ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+    ctx.lineTo(x + width, y + height - radius);
+    ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+    ctx.lineTo(x + radius, y + height);
+    ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+    ctx.lineTo(x, y + radius);
+    ctx.quadraticCurveTo(x, y, x + radius, y);
+    ctx.closePath();
+    ctx.fill();
+  }
+
   class Game {
     constructor() {
       this.initCanvas();
-        this.init();
-        this.isCountdownInProgress = false;
+      this.init();
+      this.isCountdownInProgress = false;
+      this.isGameOver = false;
       this.startCountdown();
+      this.canvas.addEventListener("click", this.handleRestartClick.bind(this));
+      this.canvas.addEventListener(
+        "mousemove",
+        this.handleMouseMove.bind(this)
+      );
     }
 
     initCanvas() {
@@ -29,74 +74,103 @@ window.onload = () => {
     }
 
     adjustCanvasSize() {
-      const maxSize = 290;
-      const size = Math.min(window.innerWidth, window.innerHeight, maxSize);
+      const minSize = 290; // Taille minimale du canvas
+      const preferredSize = Math.min(window.innerWidth, window.innerHeight) * 0.5; // Taille préférée du canvas
+      const maxSize = 700; // 90% de la dimension la plus petite de la fenêtre
+
+      const size = Math.max(minSize, Math.min(preferredSize, maxSize));
       this.canvas.width = size;
       this.canvas.height = size;
-      if (!this.blockSize) {
-        this.blockSize = 17;
-      }
+      this.blockSize = 17;
       this.widthInBlocks = this.canvas.width / this.blockSize;
       this.heightInBlocks = this.canvas.height / this.blockSize;
       this.centreX = this.canvas.width / 2;
       this.centreY = this.canvas.height / 2;
-      if (this.snakee) {
-        this.launch();
-      }
     }
 
     init() {
-      this.delay = 300;
-      }
-      
-startCountdown() {
-    if (this.isCountdownInProgress) {
-        return; 
+      this.delay = 250;
     }
-    this.isCountdownInProgress = true;
-    let countdownValue = 3;
-    const countdownInterval = 1000;
-    const drawCountdown = () => {
-        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height); 
+
+    startCountdown() {
+      if (this.isCountdownInProgress) return;
+      this.isCountdownInProgress = true;
+      let countdownValue = 3;
+      const countdownInterval = 1000;
+
+      const drawCountdown = () => {
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         this.ctx.font = "bold 6rem sans-serif";
-        this.ctx.fillStyle = "#666";
+        this.ctx.fillStyle = "#555";
         this.ctx.textAlign = "center";
         this.ctx.textBaseline = "middle";
-        this.ctx.fillText(countdownValue.toString(), this.centreX, this.centreY);
+        this.ctx.fillText(
+          countdownValue.toString(),
+          this.centreX,
+          this.centreY
+        );
 
         if (countdownValue > 0) {
-            setTimeout(() => {
-                countdownValue--;
-                requestAnimationFrame(drawCountdown);
-            }, countdownInterval);
+          setTimeout(() => {
+            countdownValue--;
+            requestAnimationFrame(drawCountdown);
+          }, countdownInterval);
         } else {
-            this.isCountdownInProgress = false;
-            this.launch();
+          this.isCountdownInProgress = false;
+          this.launch();
         }
-    };
-    requestAnimationFrame(drawCountdown);
-}
+      };
+      requestAnimationFrame(drawCountdown);
+    }
 
-    launch() {
-      this.snakee = new Snake("right", [6, 4], [5, 4], [4, 4], [3, 4], [2, 4]);
-      this.applee = new Apple();
-      this.score = 0;
-      clearTimeout(this.timeOut);
-      this.refreshCanvas();
+    createRestartButton() {
+      if (!this.isGameOver) return;
+
+      const buttonWidth = 200;
+      const buttonHeight = 50;
+      const buttonX = this.centreX - buttonWidth / 2;
+      const buttonY = 5;
+
+      this.ctx.fillStyle = "#555";
+      // this.ctx.fillRect(buttonX, buttonY, buttonWidth, buttonHeight);
+      drawRoundedRect(
+        this.ctx,
+        buttonX,
+        buttonY,
+        buttonWidth,
+        buttonHeight,
+        25
+      );
+
+      this.ctx.font = "bold 1.5rem sans-serif";
+      this.ctx.fillStyle = "#eee";
+      this.ctx.textAlign = "center";
+      this.ctx.textBaseline = "middle";
+
+      const buttonText = "PLAY AGAIN !";
+      const buttonTextX = buttonX + buttonWidth / 2;
+      const buttonTextY = buttonY + buttonHeight / 2;
+
+      this.ctx.fillText(buttonText, buttonTextX, buttonTextY);
     }
 
     refreshCanvas() {
       this.snakee.advance();
       if (this.snakee.checkCollision(this.widthInBlocks, this.heightInBlocks)) {
+        this.isGameOver = true;
         Drawing.gameOver(this.ctx, this.centreX, this.centreY);
+        this.createRestartButton();
       } else {
         if (this.snakee.isEatingApple(this.applee)) {
-          this.score++;
-          this.snakee.ateApple = true;
+          this.score++; // Incrémenter le score
+          this.snakee.ateApple = true; // Marquer que le serpent a mangé la pomme
+
+          // Placer une nouvelle pomme
           do {
             this.applee.setNewPosition(this.widthInBlocks, this.heightInBlocks);
           } while (this.applee.isOnSnake(this.snakee));
 
+          // Accélérer le jeu à chaque fois que le serpent mange 5 pommes
           if (this.score % 5 === 0) {
             this.speedUp();
           }
@@ -109,8 +183,68 @@ startCountdown() {
       }
     }
 
+    handleRestartClick(event) {
+      if (!this.isGameOver) return;
+
+      const rect = this.canvas.getBoundingClientRect();
+      const scaleX = this.canvas.width / rect.width;
+      const scaleY = this.canvas.height / rect.height;
+      const canvasX = (event.clientX - rect.left) * scaleX;
+      const canvasY = (event.clientY - rect.top) * scaleY;
+
+      const buttonWidth = 200;
+      const buttonHeight = 50;
+      const buttonX = this.centreX - buttonWidth / 2;
+      const buttonY = 5;
+
+      if (
+        canvasX >= buttonX &&
+        canvasX <= buttonX + buttonWidth &&
+        canvasY >= buttonY &&
+        canvasY <= buttonY + buttonHeight
+      ) {
+        this.isGameOver = false;
+        this.startCountdown();
+      }
+    }
+
+    handleMouseMove(event) {
+      const rect = this.canvas.getBoundingClientRect();
+      const scaleX = this.canvas.width / rect.width;
+      const scaleY = this.canvas.height / rect.height;
+      const canvasX = (event.clientX - rect.left) * scaleX;
+      const canvasY = (event.clientY - rect.top) * scaleY;
+
+      const buttonWidth = 200;
+      const buttonHeight = 50;
+      const buttonX = this.centreX - buttonWidth / 2;
+      const buttonY = 0; // Top du canvas
+
+      // Vérifier si la souris est sur le bouton
+      if (
+        canvasX >= buttonX &&
+        canvasX <= buttonX + buttonWidth &&
+        canvasY >= buttonY &&
+        canvasY <= buttonY + buttonHeight &&
+        this.isGameOver
+      ) {
+        this.canvas.style.cursor = "pointer";
+      } else {
+        this.canvas.style.cursor = "default";
+      }
+    }
+
+    launch() {
+      this.snakee = new Snake("right", [6, 4], [5, 4], [4, 4], [3, 4], [2, 4]);
+      this.applee = new Apple([10, 10]);
+      this.score = 0;
+      this.delay = 250;
+      clearTimeout(this.timeOut);
+      this.refreshCanvas();
+    }
+
     speedUp() {
-      this.delay /= 2;
+      this.delay /= 1.5;
     }
   }
 
@@ -210,20 +344,14 @@ startCountdown() {
   class Drawing {
     static gameOver(ctx, centreX, centreY) {
       ctx.save();
-      ctx.font = "bold 3rem sans-serif";
+      ctx.font = "bold 2.7rem sans-serif";
       ctx.fillStyle = "#000";
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
       ctx.strokeStyle = "white";
       ctx.lineWidth = 5;
-      ctx.strokeText("Game Over", centreX, centreY + 120);
-      ctx.fillText("Game Over", centreX, centreY + 120);
-
-        ctx.font = "bold 1.2rem sans-serif";
-      let text = "Appuyer sur la touche Espace";
-      ctx.strokeText(text, centreX, centreY - 120);
-      ctx.fillText(text, centreX, centreY - 120);
-      
+      ctx.strokeText("GAME OVER", centreX, centreY + 120);
+      ctx.fillText("GAME OVER", centreX, centreY + 120);
       ctx.restore();
     }
 
@@ -310,16 +438,14 @@ startCountdown() {
 
   const myGame = new Game();
 
-    document.onkeydown = (e) => {
-      if (e.keyCode in DIRECTION_MAP) {
-        if (!myGame.isCountdownInProgress) {
-          const newDirection = DIRECTION_MAP[e.keyCode];
-          myGame.snakee.setDirection(newDirection);
-        }
-      } else if (e.keyCode === DIRECTIONS.SPACE) {
-        if (!myGame.isCountdownInProgress) {
-          myGame.startCountdown(); 
-        }
+  document.addEventListener("keydown", (e) => {
+    if (e.keyCode in DIRECTION_MAP) {
+      const newDirection = DIRECTION_MAP[e.keyCode];
+      setDirection(newDirection);
+    } else if (e.keyCode === DIRECTIONS.SPACE) {
+      if (!myGame.isCountdownInProgress) {
+        myGame.startCountdown();
       }
-    }; 
+    }
+  });
 };
