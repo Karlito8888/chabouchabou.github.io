@@ -91,6 +91,11 @@ body h1 {
     top: 5%;
   }
 }
+@media (max-width: 540px) and (orientation: portrait) and (hover: none) and (pointer: coarse) {
+  body h1 {
+    position: static;
+  }
+}
 body .controls {
   display: none;
 }
@@ -186,6 +191,14 @@ body .controls {
   }
   body .controls .left-control {
     display: none;
+  }
+}
+@media (max-width: 520px) and (orientation: portrait) and (hover: none) and (pointer: coarse) {
+  body .controls {
+    position: static;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 }
 body .keyboard-img {

@@ -72,6 +72,9 @@ body {
       position: absolute;
       top: 5%;
     }
+         @media (max-width: 540px) and (orientation: portrait) and (hover: none) and (pointer: coarse) {
+          position: static;
+         }
   }
 
   .controls {
@@ -157,6 +160,10 @@ body {
         display: none;
       }
     }
+         @media (max-width: 520px) and (orientation: portrait) and (hover: none) and (pointer: coarse) {
+          position: static;
+          order: 3;
+        }
   }
 
   .keyboard-img {
