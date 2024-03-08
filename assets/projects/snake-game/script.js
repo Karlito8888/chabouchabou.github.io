@@ -75,13 +75,15 @@ window.onload = () => {
 
     adjustCanvasSize() {
       const minSize = 290; // Taille minimale du canvas
-      const preferredSize = Math.min(window.innerWidth, window.innerHeight) * 0.5; // Taille préférée du canvas
+      const preferredSize =
+        Math.min(window.innerWidth, window.innerHeight) * 0.5; // Taille préférée du canvas
       const maxSize = 700; // 90% de la dimension la plus petite de la fenêtre
 
       const size = Math.max(minSize, Math.min(preferredSize, maxSize));
       this.canvas.width = size;
       this.canvas.height = size;
-      this.blockSize = 17;
+      const desiredBlocks = 23;
+      this.blockSize = Math.floor(size / desiredBlocks);
       this.widthInBlocks = this.canvas.width / this.blockSize;
       this.heightInBlocks = this.canvas.height / this.blockSize;
       this.centreX = this.canvas.width / 2;
@@ -176,6 +178,7 @@ window.onload = () => {
           }
         }
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        // this.drawGrid();
         Drawing.drawScore(this.ctx, this.centreX, this.centreY, this.score);
         Drawing.drawSnake(this.ctx, this.blockSize, this.snakee);
         Drawing.drawApple(this.ctx, this.blockSize, this.applee);
@@ -246,6 +249,27 @@ window.onload = () => {
     speedUp() {
       this.delay /= 1.5;
     }
+
+    // drawGrid() {
+    //   this.ctx.strokeStyle = "#ccc"; // Couleur de la grille, à ajuster selon le thème
+    //   this.ctx.lineWidth = 1; // Épaisseur des lignes de la grille
+
+    //   // Dessiner les lignes verticales
+    //   for (let x = 0; x <= this.widthInBlocks; x++) {
+    //     this.ctx.beginPath();
+    //     this.ctx.moveTo(x * this.blockSize, 0);
+    //     this.ctx.lineTo(x * this.blockSize, this.canvas.height);
+    //     this.ctx.stroke();
+    //   }
+
+    //   // Dessiner les lignes horizontales
+    //   for (let y = 0; y <= this.heightInBlocks; y++) {
+    //     this.ctx.beginPath();
+    //     this.ctx.moveTo(0, y * this.blockSize);
+    //     this.ctx.lineTo(this.canvas.width, y * this.blockSize);
+    //     this.ctx.stroke();
+    //   }
+    // }
   }
 
   class Snake {
