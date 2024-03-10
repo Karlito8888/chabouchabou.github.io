@@ -1,0 +1,493 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  height: 100vh;
+  height: 100dvh;
+}
+
+body {
+  height: 100%;
+  height: 100dvh;
+  font-family: "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual, cursive;
+  font-weight: 600;
+  font-size: 16px;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+#root {
+  height: 100%;
+  height: 100dvh;
+  color: #e3e3e3;
+  background-image: -webkit-gradient(linear, left top, right top, from(#06b6d4), to(#3b82f6));
+  background-image: linear-gradient(to right, #06b6d4, #3b82f6);
+}
+#root .container {
+  height: 100%;
+  height: 100dvh;
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+  grid-template-rows: 20dvh 60dvh 20dvh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+#root .container .title {
+  height: 100%;
+  height: 20dvh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#root .container .title h1 {
+  font-size: clamp(1.9rem, 1.46rem + 1.76vw, 3rem);
+}
+#root .container .game-container {
+  height: 100%;
+  height: 60dvh;
+  width: 100%;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+#root .container .game-container .grid-layout {
+  display: grid;
+  height: calc(100% - 0.75rem);
+  width: calc(100% - 3rem);
+  max-width: 25rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#root .container .game-container .grid-layout .square {
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #e3e3e3;
+  border-radius: 10px;
+  font-size: 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+#root .container .game-container .grid-layout .square:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+@media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  #root .container .game-container .grid-layout .square {
+    font-size: 2.5rem;
+  }
+}
+#root .container .game-container .grid-layout .yellow {
+  color: #ecc94b;
+}
+#root .container .game-container .grid-layout .fuschia {
+  color: #d53f8c;
+}
+#root .container .game-container .grid-layout .scale-100 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+#root .container .game-container .grid-layout .scale-0 {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+#root .container .game-container .grid-layout .transition-scale {
+  -webkit-transition: -webkit-transform 150ms ease-out;
+  transition: -webkit-transform 150ms ease-out;
+  transition: transform 150ms ease-out;
+  transition: transform 150ms ease-out, -webkit-transform 150ms ease-out;
+}
+#root .container .content {
+  height: 100%;
+  height: 20dvh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "pla pla" "pl1 pl2";
+  justify-items: center;
+}
+#root .container .content .players {
+  height: 100%;
+  grid-area: pla;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+#root .container .content .players p {
+  font-size: 1.2rem;
+  color: #e3e3e3;
+}
+#root .container .content .player1 {
+  height: 100%;
+  grid-area: pl1;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  justify-items: center;
+}
+#root .container .content .player1 p {
+  font-size: clamp(1.2rem, 1.08rem + 0.48vw, 1.5rem);
+  color: #ecc94b;
+}
+#root .container .content .player1 span {
+  color: #e3e3e3;
+  font-size: 1.8rem;
+}
+#root .container .content .player2 {
+  height: 100%;
+  grid-area: pl2;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  justify-items: center;
+}
+#root .container .content .player2 p {
+  font-size: clamp(1.2rem, 1.08rem + 0.48vw, 1.5rem);
+  color: #d53f8c;
+}
+#root .container .content .player2 span {
+  color: #e3e3e3;
+  font-size: clamp(1.5rem, 1.38rem + 0.48vw, 1.8rem);
+}
+@media (max-width: 820px) and (orientation: portrait) and (hover: none) and (pointer: coarse) {
+  #root .container {
+    height: 100%;
+    height: 100dvh;
+    display: grid;
+    grid-template-rows: 20% 50% 30%;
+    grid-template-rows: 20dvh 50dvh 30dvh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  #root .container .title {
+    height: 100%;
+    height: 20dvh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #root .container .title h1 {
+    font-size: clamp(1.9rem, 1.46rem + 1.76vw, 3rem);
+  }
+  #root .container .game-container {
+    height: 100%;
+    height: 50dvh;
+    width: 100%;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  #root .container .game-container .grid-layout {
+    display: grid;
+    height: calc(100% - 0.75rem);
+    width: calc(100% - 3rem);
+    max-width: 25rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #root .container .game-container .grid-layout .square {
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #e3e3e3;
+    border-radius: 10px;
+    font-size: 4.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 500ms;
+    transition: -webkit-transform 500ms;
+    transition: transform 500ms;
+    transition: transform 500ms, -webkit-transform 500ms;
+  }
+  #root .container .game-container .grid-layout .square:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  #root .container .game-container .grid-layout .yellow {
+    color: #ecc94b;
+  }
+  #root .container .game-container .grid-layout .fuschia {
+    color: #d53f8c;
+  }
+  #root .container .game-container .grid-layout .scale-100 {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  #root .container .game-container .grid-layout .scale-0 {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  #root .container .game-container .grid-layout .transition-scale {
+    -webkit-transition: -webkit-transform 150ms ease-out;
+    transition: -webkit-transform 150ms ease-out;
+    transition: transform 150ms ease-out;
+    transition: transform 150ms ease-out, -webkit-transform 150ms ease-out;
+  }
+  #root .container .content {
+    height: 100%;
+    height: 30dvh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "pla pla" "pl1 pl2";
+    justify-items: center;
+  }
+  #root .container .content .players {
+    height: 100%;
+    grid-area: pla;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  #root .container .content .players p {
+    font-size: 1.2rem;
+    color: #e3e3e3;
+  }
+  #root .container .content .player1 {
+    height: 100%;
+    grid-area: pl1;
+    display: grid;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    justify-items: center;
+  }
+  #root .container .content .player1 p {
+    font-size: clamp(1.2rem, 1.08rem + 0.48vw, 1.5rem);
+    color: #ecc94b;
+  }
+  #root .container .content .player1 span {
+    color: #e3e3e3;
+    font-size: 1.8rem;
+  }
+  #root .container .content .player2 {
+    height: 100%;
+    grid-area: pl2;
+    display: grid;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    justify-items: center;
+  }
+  #root .container .content .player2 p {
+    font-size: clamp(1.2rem, 1.08rem + 0.48vw, 1.5rem);
+    color: #d53f8c;
+  }
+  #root .container .content .player2 span {
+    color: #e3e3e3;
+    font-size: clamp(1.5rem, 1.38rem + 0.48vw, 1.8rem);
+  }
+}
+@media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  #root .container {
+    grid-template-rows: 15% 85%;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-areas: "tit gam" "sco gam";
+  }
+  #root .container .title {
+    grid-area: tit;
+  }
+  #root .container .title h1 {
+    font-size: 1.9rem;
+  }
+  #root .container .game-container {
+    grid-area: gam;
+    height: 100dvh;
+  }
+  #root .container .game-container .grid-layout {
+    display: grid;
+    height: calc(95% - 0.75rem);
+    width: calc(100% - 3rem);
+    max-width: 25rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #root .container .game-container .grid-layout .square {
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #e3e3e3;
+    border-radius: 10px;
+    font-size: 4.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 500ms;
+    transition: -webkit-transform 500ms;
+    transition: transform 500ms;
+    transition: transform 500ms, -webkit-transform 500ms;
+  }
+  #root .container .game-container .grid-layout .square:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+@media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  #root .container .game-container .grid-layout .square {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  #root .container .game-container .grid-layout .yellow {
+    color: #ecc94b;
+  }
+  #root .container .game-container .grid-layout .fuschia {
+    color: #d53f8c;
+  }
+  #root .container .game-container .grid-layout .scale-100 {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  #root .container .game-container .grid-layout .scale-0 {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  #root .container .game-container .grid-layout .transition-scale {
+    -webkit-transition: -webkit-transform 150ms ease-out;
+    transition: -webkit-transform 150ms ease-out;
+    transition: transform 150ms ease-out;
+    transition: transform 150ms ease-out, -webkit-transform 150ms ease-out;
+  }
+  #root .container .content {
+    grid-area: sco;
+    height: 100%;
+    width: 50vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "pla pla" "pl1 pl2";
+    justify-items: center;
+  }
+  #root .container .content .players {
+    height: 100%;
+    grid-area: pla;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  #root .container .content .players p {
+    font-size: 1.2rem;
+    color: #e3e3e3;
+  }
+  #root .container .content .player1 {
+    height: 100%;
+    grid-area: pl1;
+    display: grid;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    justify-items: center;
+  }
+  #root .container .content .player1 p {
+    font-size: clamp(1.2rem, 1.08rem + 0.48vw, 1.5rem);
+    color: #ecc94b;
+  }
+  #root .container .content .player1 span {
+    color: #e3e3e3;
+    font-size: 1.8rem;
+  }
+  #root .container .content .player2 {
+    height: 100%;
+    grid-area: pl2;
+    display: grid;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    justify-items: center;
+  }
+  #root .container .content .player2 p {
+    font-size: clamp(1.2rem, 1.08rem + 0.48vw, 1.5rem);
+    color: #d53f8c;
+  }
+  #root .container .content .player2 span {
+    color: #e3e3e3;
+    font-size: clamp(1.5rem, 1.38rem + 0.48vw, 1.8rem);
+  }
+}/*# sourceMappingURL=index.css.map */
