@@ -1,0 +1,32 @@
+footer {
+  height: auto;
+  width: 100%;
+  background: rgb(15, 15, 15);
+  color: whitesmoke;
+  padding: 25px 10%;
+
+  h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      img {
+        width: 80%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+      }
+    }
+  }
+}
