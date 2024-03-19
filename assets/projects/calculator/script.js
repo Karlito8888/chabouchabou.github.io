@@ -114,6 +114,14 @@ class Calculator {
     }
   }
 
+  toggleSign() {
+    if (this.currentOperand.startsWith("-")) {
+      this.currentOperand = this.currentOperand.substring(1);
+    } else if (this.currentOperand !== "") {
+      this.currentOperand = "-" + this.currentOperand;
+    }
+  }
+
   updateDisplay() {
     this.currentOperandTextElement.innerText = this.getDisplayNumber(
       this.currentOperand

@@ -57,7 +57,7 @@ html {
       height: auto;
       max-height: 100%;
       width: 100%;
-      max-width: 500px;
+      max-width: 400px;
 
       .output {
         grid-column: 1 / -1;
@@ -124,14 +124,8 @@ html {
         button {
           cursor: pointer;
           padding: 5px;
-
-          // aspect-ratio: auto;
           font-size: 1rem;
         }
-        // button.span-two {
-        //   grid-column: span ;
-        //   aspect-ratio: 2/1;
-        // }
       }
     }
   }
