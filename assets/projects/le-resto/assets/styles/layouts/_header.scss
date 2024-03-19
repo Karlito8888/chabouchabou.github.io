@@ -1,7 +1,30 @@
 header {
-  background: url(../img/bg-slider-06.jpg) center/cover;
+  background: url("../img/bg-slider-06-l.webp");
+  background-image: -webkit-image-set(
+    "../img/bg-slider-06-l.webp" type("image/webp") 1x,
+    "../img/bg-slider-06-xl.webp" type("image/jwebp") 2x
+  );
+  background-image: image-set(
+    "../img/bg-slider-06-l.webp" type("image/webp") 1x,
+    "../img/bg-slider-06-xl.webp" type("image/jwebp") 2x
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 0 50px;
   color: $white;
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    background-image: url("../img/bg-slider-06-m.webp");
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    background-image: url("../img/bg-slider-06-s.webp");
+  }
+
+  @media screen and (max-width: 480px) {
+    background-image: url("../img/bg-slider-06-xs.webp");
+  }
 
   nav {
     height: 12vh;

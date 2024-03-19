@@ -8,10 +8,29 @@
     position: absolute;
     height: 620px;
     width: 100%;
-    background: url(../img/bg-menu-01.jpg) center/cover;
     left: 50%;
     bottom: -330px;
     transform: translate(-50%, -50%);
+    background: url("../img/bg-menu-01-l.webp");
+    background-image: image-set(
+      "../img/bg-menu-01-l.webp" type("image/webp") 1x,
+      "../img/bg-menu-01-xl.webp" type("image/jwebp") 2x
+    );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      background-image: url("../img/bg-menu-01-m.webp");
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      background-image: url("../img/bg-menu-01-s.webp");
+    }
+
+    @media screen and (max-width: 480px) {
+      background-image: url("../img/bg-menu-01-xs.webp");
+    }
   }
   h2 {
     color: $color1;

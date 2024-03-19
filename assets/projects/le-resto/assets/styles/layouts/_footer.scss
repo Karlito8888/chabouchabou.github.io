@@ -45,10 +45,15 @@ footer {
 
       @media screen and (max-width: 680px) {
         padding-left: 20px;
+        justify-content: center;
+        justify-items: center;
       }
 
       h3 {
         font-size: 0.85rem;
+        @media screen and (max-width: 680px) {
+          text-align: center;
+        }
       }
       input {
         margin-top: 15px;
@@ -63,16 +68,18 @@ footer {
       }
       .follow-us {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin-top: 50px;
 
         h3 {
-          @media screen and (max-width: 680px) {
+          @media screen and (max-width: 730px) {
             display: none;
           }
         }
 
         ul {
-          @include alignChildren(space-around);
+          @include alignChildren(space-between);
           flex-wrap: wrap;
           color: #595956;
           font-size: 0.8rem;

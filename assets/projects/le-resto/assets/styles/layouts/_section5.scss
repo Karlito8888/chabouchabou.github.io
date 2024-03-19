@@ -7,9 +7,27 @@
     height: 350px;
     width: 100%;
     position: absolute;
-    background: url(../img/gmap.jpg) center/cover;
     left: 0;
-    bottom: 0;
+      bottom: 0;
+    background: url("../img/gmap-l.webp");
+    background-image: image-set("../img/gmap-l.webp" type("image/webp") 1x,
+          "../img/gmap-xl.webp" type("image/jwebp") 2x);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    
+      @media screen and (min-width: 769px) and (max-width: 1024px) {
+        background-image: url("../img/gmap-m.webp");
+      }
+    
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        background-image: url("../img/gmap-s.webp");
+      }
+    
+      @media screen and (max-width: 480px) {
+        background-image: url("../img/gmap-xs.webp");
+      }
+   
   }
   .quote-container {
     background: $white;

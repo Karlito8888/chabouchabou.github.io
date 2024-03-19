@@ -40,7 +40,22 @@
     }
   }
   .intro-pic {
-    background: url(../img/store-01.jpg) center/cover;
+    background: url("../img/store-01-l.webp");
+    background-image: image-set(
+      "../img/store-01-l.webp" type("image/webp") 1x,
+      "../img/store-01-xl.webp" type("image/jwebp") 2x
+    );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      background-image: url("../img/store-01-m.webp");
+    }
+
+    @media screen and (min-width: 681px) and (max-width: 768px) {
+      background-image: url("../img/store-01-s.webp");
+    }
 
     @media screen and (max-width: 680px) {
       display: none;
