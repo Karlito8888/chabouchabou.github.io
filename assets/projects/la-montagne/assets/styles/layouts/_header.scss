@@ -22,12 +22,8 @@ header {
 
     h1 {
       @include title;
-      font-size: 4rem;
+      font-size: clamp(2rem, 1.2rem + 3.2vw, 4rem);
       letter-spacing: 6px;
-
-      @media screen and (max-width: 700px) {
-        font-size: 2rem;
-      }
     }
     p {
       margin: 40px auto 60px;
@@ -70,16 +66,12 @@ header {
 
       li {
         @include title;
-        font-size: 0.7rem;
+        font-size: clamp(0.5rem, 0.42rem + 0.32vw, 0.7rem);
         padding: 0 15px;
         height: 100%;
         display: flex;
         align-items: center;
         cursor: pointer;
-
-        @media screen and (max-width: 700px) {
-          font-size: 0.5rem;
-        }
 
         &:first-child {
           background: $white1;
