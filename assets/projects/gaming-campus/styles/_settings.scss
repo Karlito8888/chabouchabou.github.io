@@ -50,7 +50,7 @@ body {
     background-image: url("../assets/img/bg-l.webp");
     background-image: image-set(
       "../assets/img/bg-l.webp" type("image/webp") 1x,
-      "../assets/img/bg-xl.webp" type("image/jwebp") 2x
+      "../assets/img/bg-xl.webp" type("image/webp") 2x
     );
     background-size: cover;
     position: fixed;

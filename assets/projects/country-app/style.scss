@@ -26,7 +26,7 @@ body {
     background-image: url("bg-l.webp");
     background-image: image-set(
       "bg-l.webp" type("image/webp") 1x,
-      "bg-xl.webp" type("image/jwebp") 2x
+      "bg-xl.webp" type("image/webp") 2x
     );
     background-size: cover;
     position: fixed;
