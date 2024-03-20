@@ -73,7 +73,7 @@ footer {
         margin-top: 50px;
 
         h3 {
-          @media screen and (max-width: 730px) {
+          @media screen and (max-width: 750px) {
             display: none;
           }
         }
@@ -86,14 +86,16 @@ footer {
           width: 200px;
           cursor: pointer;
 
-          i {
+          a {
+            color:$white;
+            i {
             transition: 0.2s;
 
             &:hover {
               transform: scale(1.5);
             }
           }
-        }
+        }}
       }
     }
   }

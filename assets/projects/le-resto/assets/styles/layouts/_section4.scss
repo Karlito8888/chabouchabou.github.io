@@ -1,9 +1,7 @@
 .section4 {
   padding: 50px 20px 90px;
 
-  @media screen and (max-width: 680px) {
-    display: none;
-  }
+  //
 
   .events-container {
     max-width: 1000px;
@@ -34,6 +32,92 @@
         "a b"
         "c b";
       gap: 20px;
+      
+      
+
+      @media screen and (max-width: 680px) {
+        display: flex;
+        flex-direction: column;
+        width: clamp(300px, 80%, 450px);
+        margin: 0 auto;
+      }
+
+      .event-left {
+        display: grid;
+        grid-template-columns: 39% 61%;
+        text-align: left;
+        scale: .8;
+          opacity: 0;
+          animation: fade-in linear forwards;
+          animation-timeline: view();
+          animation-range-start: cover;
+          animation-range-end: 300px;
+        
+        
+          @keyframes fade-in {
+            to {
+              scale: 1;
+              opacity: 1;
+            }}
+
+        .date {
+          @include childCenter;
+        }
+
+        .address {
+          color: $black;
+          padding: 30px 20px;
+        }
+      }
+
+      .event-1 {
+        grid-area: a;
+
+        .date {
+          background: url(../img/event-01.jpg) center/cover;
+        }
+      }
+
+      .event-2 {
+        grid-area: c;
+
+        .date {
+          background: url(../img/event-02.jpg) center/cover;
+        }
+      }
+
+      .event-3 {
+        grid-area: b;
+        background: url(../img/event-03.jpg) center/cover;
+        padding: 25px;
+        scale: .9;
+          opacity: 0;
+          animation: fade-in linear forwards;
+          animation-timeline: view();
+          animation-range-start: cover;
+          animation-range-end: 300px;
+        
+        
+          @keyframes fade-in {
+            to {
+              scale: 1;
+              opacity: 1;
+            }
+          }
+
+        .address {
+          height: 100%;
+          padding: 0 12px;
+
+          h3 {
+            margin: 40px 0 15px;
+          }
+
+          h5 {
+            padding: 45px 0;
+          }
+        }
+      }
 
       .date-content {
         background: $black;
@@ -55,20 +139,21 @@
 
         h3 {
           letter-spacing: 1px;
-          font-size: 1.3rem;
+          font-size: clamp(0.8rem, 0.6rem + 0.8vw, 1.3rem);
           font-weight: 500;
           padding-left: 8px;
         }
         p {
-          font-size: 0.9rem;
+          font-size: clamp(0.6rem, 0.48rem + 0.48vw, 0.9rem);
           color: $grey;
           margin-top: 20px;
           letter-spacing: 1px;
 
           i {
             margin-right: 3px;
+            margin-bottom: 10px;
             font-size: 0.7rem;
-            transform: translateY(-2px);
+            transform: translate(-2px);
 
             &:nth-child(2) {
               margin-left: 10px;
@@ -78,52 +163,6 @@
         h5 {
           letter-spacing: 2px;
           margin-top: 25px;
-        }
-      }
-
-      .event-left {
-        display: grid;
-        grid-template-columns: 39% 61%;
-        text-align: left;
-
-        .date {
-          @include childCenter;
-        }
-        .address {
-          color: $black;
-          padding: 30px 20px;
-        }
-      }
-
-      .event-1 {
-        grid-area: a;
-
-        .date {
-          background: url(../img/event-01.jpg) center/cover;
-        }
-      }
-      .event-2 {
-        grid-area: c;
-
-        .date {
-          background: url(../img/event-02.jpg) center/cover;
-        }
-      }
-      .event-3 {
-        grid-area: b;
-        background: url(../img/event-03.jpg) center/cover;
-        padding: 25px;
-
-        .address {
-          height: 100%;
-          padding: 0 12px;
-
-          h3 {
-            margin: 40px 0 15px;
-          }
-          h5 {
-            padding: 45px 0;
-          }
         }
       }
     }

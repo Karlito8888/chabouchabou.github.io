@@ -39,6 +39,10 @@
     padding: 65px 70px;
     box-shadow: 0 0 3px #333;
 
+    @media screen and (max-width: 680px) {
+      padding: 10%;
+    }
+
     &:before {
       content: "";
       position: absolute;
@@ -50,6 +54,7 @@
       transform: translateX(-50%);
       border-radius: 50px;
     }
+
     .text-container {
       line-height: 30px;
 

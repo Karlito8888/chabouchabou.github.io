@@ -14,7 +14,7 @@
 $font1: Allura, cursive;
 $font2: Poppins, serif;
 $font3: Roboto, serif;
-$white: #eee;
+$white: #e2e2e2;
 $black: #21201e;
 $grey: rgb(182, 182, 182);
 $color1: rgb(166, 114, 69);
@@ -37,8 +37,8 @@ $color1: rgb(166, 114, 69);
   box-sizing: border-box;
 }
 
-li {
-  list-style: none;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -49,4 +49,9 @@ body {
   height: 100svh;
   overflow-x: hidden;
   overflow-x: clip;
+  letter-spacing: 1px;
+}
+
+li {
+  list-style: none;
 }

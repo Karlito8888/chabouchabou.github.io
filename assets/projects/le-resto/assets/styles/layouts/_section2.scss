@@ -12,10 +12,8 @@
     bottom: -330px;
     transform: translate(-50%, -50%);
     background: url("../img/bg-menu-01-l.webp");
-    background-image: image-set(
-      "../img/bg-menu-01-l.webp" type("image/webp") 1x,
-      "../img/bg-menu-01-xl.webp" type("image/jwebp") 2x
-    );
+    background-image: image-set("../img/bg-menu-01-l.webp" type("image/webp") 1x,
+        "../img/bg-menu-01-xl.webp" type("image/jwebp") 2x);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,6 +30,7 @@
       background-image: url("../img/bg-menu-01-xs.webp");
     }
   }
+
   h2 {
     color: $color1;
     font-size: 2rem;
@@ -39,6 +38,7 @@
     font-weight: 500;
     padding: 60px 0 30px;
   }
+
   ul {
     @include alignChildren(space-around);
     width: 50%;
@@ -54,8 +54,15 @@
     li {
       border-bottom: 1px solid $grey;
       padding-bottom: 8px;
+      transition: 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
+
   .meals {
     background: $white;
     color: $black;
@@ -85,7 +92,22 @@
         object-fit: cover;
         width: 100%;
         align-self: center;
+        scale: .8;
+        opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 300px;
+
+
+        @keyframes fade-in {
+          to {
+            scale: 1;
+            opacity: 1;
+          }
+        }
       }
+
       .meal-text {
         text-align: left;
         display: flex;
@@ -102,7 +124,8 @@
           margin-bottom: 5px;
         }
       }
-      > p {
+
+      >p {
         color: $color1;
         font-weight: 600;
         font-size: 1.1rem;
