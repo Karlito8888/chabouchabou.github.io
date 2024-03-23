@@ -55,8 +55,12 @@ main {
       font-style: italic;
       font-size: 0.8rem;
     }
+    img {
+      object-fit: cover;
+    }
     .btn {
       margin: 50px 0 90px;
+      color: $black1;
     }
   }
   .section2 {
@@ -80,11 +84,17 @@ main {
         @include title;
         line-height: 28px;
       }
+      img {
+        object-fit: cover;
+      }
       p {
         text-align: left;
         line-height: 30px;
         margin: 30px 0;
         font-size: 0.8rem;
+      }
+      .btn {
+        color: $black1;
       }
     }
     .left-part {

@@ -1,0 +1,31 @@
+$color_1: rgba(21, 21, 21, 0.863);
+$color_2: skyblue;
+$font-family_1: "Source Sans Pro", sans-serif;
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url(../fonts/SourceSansPro-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin-block: 0;
+  outline: none;
+}
+
+html {
+  height: 100%;
+  height: 100vh;
+  height: 100svh;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+body {
+  height: 100%;
+  font-family: $font-family_1;
+  font-size: 16px;
+}

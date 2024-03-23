@@ -1,0 +1,53 @@
+footer {
+  padding: 70px 0 90px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.082);
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+    min-width: 300px;
+    margin: 0 auto;
+
+    li {
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 1.5rem;
+
+        &:hover {
+          border: 1px solid skyblue;
+          color: $color_2;
+        }
+
+        border: 1px solid #ccc;
+        color: #ccc;
+        border-radius: 50px;
+        text-decoration: none;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+
+        i {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

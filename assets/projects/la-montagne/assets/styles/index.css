@@ -26,6 +26,7 @@ body {
   height: 100%;
   text-align: center;
   font-family: merri, serif;
+  position: relative;
 }
 body .bg {
   height: 100%;
@@ -44,21 +45,15 @@ body .bg {
     background-image: url("../img/bg-m.webp");
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body .bg {
     background-image: url("../img/bg-s.webp");
-  }
-}
-@media screen and (max-width: 480px) {
-  body .bg {
-    background-image: url("../img/bg-xs.webp");
   }
 }
 body .content {
   position: absolute;
   width: 100%;
   height: 100%;
-  margin-top: 1rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -133,7 +128,7 @@ header .header-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh;
+  height: 100svh;
   opacity: 0;
   -webkit-transform: translateY(40px);
           transform: translateY(40px);
@@ -181,6 +176,23 @@ header .header-content span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+  cursor: pointer;
+}
+header .header-content span:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+@media (max-width: 999px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  header .header-content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  header .header-content p {
+    margin: 20px auto;
+  }
 }
 header nav {
   display: -webkit-box;
@@ -226,6 +238,8 @@ header nav .nav-left li {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 header nav .nav-left li:first-child {
   background: rgba(243, 243, 243, 0.668);
@@ -320,8 +334,13 @@ main .section1 p {
   font-style: italic;
   font-size: 0.8rem;
 }
+main .section1 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 main .section1 .btn {
   margin: 50px 0 90px;
+  color: rgb(17, 17, 17);
 }
 main .section2 {
   display: grid;
@@ -349,12 +368,21 @@ main .section2 .right-part h3 {
   text-transform: uppercase;
   line-height: 28px;
 }
+main .section2 .left-part img,
+main .section2 .right-part img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 main .section2 .left-part p,
 main .section2 .right-part p {
   text-align: left;
   line-height: 30px;
   margin: 30px 0;
   font-size: 0.8rem;
+}
+main .section2 .left-part .btn,
+main .section2 .right-part .btn {
+  color: rgb(17, 17, 17);
 }
 main .section2 .left-part {
   border-right: 1px solid rgb(209, 209, 209);
@@ -471,4 +499,14 @@ footer .infos-contact .social ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+  cursor: pointer;
+}
+footer .infos-contact .social ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+footer .infos-contact .social ul li a {
+  color: rgb(209, 209, 209);
 }/*# sourceMappingURL=index.css.map */
