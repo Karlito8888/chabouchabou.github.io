@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/OCR-Kasa/static/css/main.bf943dbe.css",
+    "main.js": "/OCR-Kasa/static/js/main.9512c88b.js",
+    "static/media/a-propos-l.png": "/OCR-Kasa/static/media/a-propos-l.2cc81de92bce3433e3ff.png",
+    "static/media/home-l.png": "/OCR-Kasa/static/media/home-l.65f5426dab67dfce0b89.png",
+    "static/media/a-propos-m.png": "/OCR-Kasa/static/media/a-propos-m.d8a3effb95a1dfdd01e6.png",
+    "static/media/home-m.png": "/OCR-Kasa/static/media/home-m.05a98f8757a6796c5ee1.png",
+    "static/media/a-propos-s.png": "/OCR-Kasa/static/media/a-propos-s.511a0b0c0743f5b9a88e.png",
+    "static/media/home-s.png": "/OCR-Kasa/static/media/home-s.760d5790355035dba87e.png",
+    "static/media/logo.png": "/OCR-Kasa/static/media/logo.d23927b03db3e79d499f.png",
+    "index.html": "/OCR-Kasa/index.html",
+    "main.bf943dbe.css.map": "/OCR-Kasa/static/css/main.bf943dbe.css.map",
+    "main.9512c88b.js.map": "/OCR-Kasa/static/js/main.9512c88b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf943dbe.css",
+    "static/js/main.9512c88b.js"
+  ]
+}
